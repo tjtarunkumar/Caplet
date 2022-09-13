@@ -1,0 +1,460 @@
+{% extends 'app_website/base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+    
+		<header class="header header--mobile" data-sticky="true">
+			<div class="header__top">
+				<div class="header__left">
+					<p>Welcome to Welmatic Enterprise Online Shopping Store!</p>
+				</div>
+				<div class="header__right">
+					<ul class="navigation__extra">
+						<li><a href="#">Track your order</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="navigation--mobile">
+				<div class="navigation__left">
+					<a class="ps-logo" href="#"><img src="{% static 'images/logo.png' %}" alt="Welmetic- Best Marketplace to sell your product online"></a>
+				</div>
+			 </div>
+			<div class="ps-search--mobile">
+				<form class="ps-form--search-mobile" action="" method="get">
+					<div class="form-group--nest">
+						<input class="form-control" name="q" value="" type="text" placeholder="Search something...">
+						<button type="submit"><i class="fas fa-search"></i></button>
+					</div>
+				</form>
+			</div>
+		</header>
+        <div class="ps-panel--sidebar" id="cart-mobile" style="display: none">
+			<div class="ps-panel__header">
+				<h3>Shopping Cart</h3>
+			</div>
+            <div class="navigation__content">
+				<div class="ps-cart--mobile">
+					<div class="ps-cart__content">
+						<div class="ps-cart__items ps-cart_no_items">
+							<span class="cart-empty-message">No products in the cart.</span>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+            <div class="ps-panel--sidebar" id="navigation-mobile" style="display: none">
+                <div class="ps-panel__header">
+                    <h3>Categories</h3>
+                </div>
+                <div class="ps-panel__content">
+                    <ul class="menu--mobile">
+                        <li>
+							<a href="#"><i class="fas fa-bacteria"></i> Organic CBD</a>
+						</li>
+						<li class="menu-item-has-children has-mega-menu" >
+							<a href="#"><i class="fas fa-hand-holding-medical"></i>  COVID-19 vaccines</a>
+								<span class="sub-toggle"></span>
+								<div class="mega-menu">
+									<div class="mega-menu__column">
+										<a href="#"><h4>Consumer Electronic<span class="sub-toggle"></span></h4></a>
+											<ul class="mega-menu__list">
+												<li><a href="#">Home Audio &amp; Theaters</a></li>
+												<li><a href="#">TV &amp; Videos</a></li>
+												<li><a href="#">Camera, Photos &amp; Videos</a></li>
+												<li><a href="#">Cellphones &amp; Accessories</a></li>
+												<li><a href="#">Headphones</a></li>
+												<li><a href="#">Videos games</a></li>
+												<li><a href="#">Wireless Speakers</a></li>
+												<li><a href="#">Office Electronic</a></li>
+											</ul>
+									</div>
+									<div class="mega-menu__column">
+										<a href="#"><h4>Accessories &amp; Parts<span class="sub-toggle"></span></h4></a>
+										<ul class="mega-menu__list">
+											<li><a href="#">Digital Cables</a></li>
+											<li><a href="#">Audio &amp; Video Cables</a></li>
+											<li><a href="#">Batteries</a></li>
+										</ul>
+									</div>
+								</div>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-file-medical-alt"></i> $4 Prescriptions</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-cheese"></i>  Functional Foods</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-american-sign-language-interpreting"></i>  Cosmeceutical</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-person-booth"></i>  Personal Care</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-capsules"></i>  Medicine</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-briefcase-medical"></i>  Medical Equipment</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-head-side-cough"></i>  Sick</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-network-wired"></i>  Other</a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navigation--list">
+				<div class="navigation__content">
+					<a class="navigation__item ps-toggle--sidebar" href="#menu-mobile"><i class="fas fa-bars"></i> <br><span>Menu</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#navigation-mobile"><i class="fas fa-box-open"></i><br><span> Categories</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#search-sidebar"><i class="fas fa-search"></i><br><span> Search</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#cart-mobile"><i class="fas fa-shopping-cart"></i><br><span> Cart</span></a>
+				</div>
+			</div>
+            <div class="ps-panel--sidebar" id="search-sidebar" style="display: none">
+                <div class="ps-panel__header">
+                    <form class="ps-form--search-mobile" action="" method="get">
+                        <div class="form-group--nest">
+                            <input class="form-control" name="q" value="" type="text" placeholder="Search something...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="navigation__content"></div>
+            </div>
+            <div class="ps-panel--sidebar" id="menu-mobile" style="display: none">
+				<div class="ps-panel__header">
+					<h3>Menu</h3>
+				</div>
+				<div class="ps-panel__content">
+					<ul  class="menu--mobile">
+						<li class="current-menu-item "><a href="#"> Home</a></li>
+						<li class=" menu-item-has-children   ">
+							<a href="#">Shop</a>
+							<span class="sub-toggle"></span>
+							<ul  class="sub-menu">
+								<li class="">
+									<a href="#">
+										 All products
+									</a>
+								</li>
+								<li class="">
+									<a href="#">
+										 Products Of Category
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#">
+								 Blog
+							</a>
+						</li>
+						<li class="">
+							<a href="#">
+								 FAQs
+							</a>
+						</li>
+						<li class="">
+							<a href="#">
+								 Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- <div class="slidermar">
+				<div class="inner-banner">
+					<div class="ps-container">
+						<div class="layer">
+							<h3>Sign In</h3>
+							<p>Home/Sign In</p>
+						</div>
+					</div>	
+				</div>
+			</div> -->
+			<p id="ptag" style="display:none; margin-left: 800px; margin-top:100px ;"></p>
+
+			<section class="categories-page">
+				<div class="ps-container">
+					<div class="login_page my-5">
+						<div class="row justify-content-center">
+							<div class="col-lg-7 col-md-10 col-12">
+								<div class="inner">
+									<div class="row no-gutters align-items-center h-100">
+										<div class="col-lg-6 col-12">
+											<div class="login-img text-center">
+												<img src="{% static 'images/high-angle-stacked.jpg' %}" class="img-fluid">
+											</div>
+										</div>
+										<div class="col-lg-6 col-12">
+											<div class="login-fild">
+												<div class="login-form">
+													{% csrf_token %}
+													<h4>Sign In</h4>
+													<small>Hello! Let's get started</small>
+													<div class="form-group mt-4" id="mobile_number">
+														<input type="tel"  class="form-control px-0" placeholder="Enter Mobile Number" id="mobile">
+														<div class="icon">
+															<i class="fa fa-phone"></i>
+														</div> 
+													</div>
+													<div class="form-group" id="otp" style="display:none;">
+														<input id="otp_value" type="password" class="form-control px-0" placeholder="Enter OTP" >
+														<div class="icon">
+															<i class="fas fa-unlock"></i>
+														</div>
+													</div>
+													<div class="d-flex sign mt-4">
+														<small class="text-white">Forget password? <a href="#">Reset</a><br><a href="#" style="color:#fff;"><strong>Sign Up</strong> </a></small>
+														<button onClick="loadDoc()" id="submit_button"  class="btn px-4 py-2"><i class="fas fa-chevron-right text-primary"></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<div class="section-footer-bottom my-5 py-5">
+				<div class="ps-container">
+					<div class="bg-footer">
+						<div class="row align-items-center">
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="logo_page">
+									<img src="{% static 'images/logo.png' %}" class="img-fluid">
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="logo_page">
+									<div class="media align-items-center p-3">
+										<i class="fas fa-comments"></i>
+										<div class="media-body">
+											<p class="text-muted">Got Questions ? Call us 24/7! </p>
+											<h3 class="mb-0 text-white">+01 2222 3456 88</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="input-group">
+									<input type="text" class="form-control bg-white" placeholder="Search">
+									<div class="input-group-append">
+										<button class="btn btn-success px-5" type="submit">Subscribe</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<section class="footer">
+				<div class="ps-container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Contact</h4>
+								<p><span><i class="fas fa-map-marker-alt"></i> </span>&#10240; 121 S Jane Ln Enid, Oklahoma(OK), 73703</p>
+								<p><span><i class="fas fa-envelope"></i> </span>&#10240; myshopemail@domain.com</p>
+								<p><span><i class="fas fa-clock"></i> </span>&#10240; Mon-Sat: 9:00pm - 5:00pm Sun: Closed</p>
+								<div class="footer-widget-listing social-icons-footer mt-5">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-linkedin-in"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Find It Fast</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Useful links</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Customer Care</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="footer-bottom-section d-flex justify-content-between align-items-center py-4">
+						<p class="mb-0">Copyright © 2022 Caplet Pharmacy - All Rights Reserved</p>
+						<img src="{% static 'images/payment.png' %}" class="img-fluid">
+					</div>
+				</div>
+			</section>
+			
+			
+
+			<script>
+
+			// function loadDoc() {
+			// const xhttp = new XMLHttpRequest();
+			// const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+			// let inputValue = document.getElementById("exampleInputEmail1").value; 
+			// console.log(inputValue);
+			
+			// xhttp.onload = function() {
+			// 	document.getElementById("exampleInputEmail1").innerHTML = this.responseText;
+			// }
+			// xhttp.open("POST", "email_check");
+			// xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			// xhttp.setRequestHeader("X-CSRFToken", csrftoken); 
+			// xhttp.send(inputValue);
+			
+			// }
+
+			// $.(document).on('click','#submit_button',function(){
+			// 	alert('function working');
+        	// var emailvalue=$('#exampleInputEmail1').val()
+        	// console.log(emailvalue)
+
+
+			// 			$.ajax({                       
+			// 			url: "email_check", 
+			// 			type:'get', //add this                  
+			// 			data: {
+			// 			'selection': my_selection 
+			// 			},
+			// 			success: function (data) {   
+			// 			console.log('done');
+			// 	}
+			// 	});
+			// 	});
+
+
+				function loadDoc()
+				{
+					var mobile=$('#mobile').val()
+					var otp=$('#otp_value').val()
+
+					
+					if(mobile === '')
+					{
+						alert('Please enter mobile number.')
+					}
+
+					if(mobile !== '' && otp === '')
+					{
+						// console.log('otp generation function has been hit.')
+							
+							$("#mobile_number").hide();
+							$("#otp").show();
+						
+							// console.log('mobile number is '+mobile)
+							// console.log('otp is '+otp)
+
+							
+							$.ajax({                       
+							url: "otp_generation", 
+							type:'post',
+							data:{'mobile':mobile,
+							'csrfmiddlewaretoken': '{{ csrf_token }}'},                
+							success: function (data) 
+							{   
+							
+							}	
+							});	
+						
+					}
+
+					if(mobile !== '')
+					{
+						if(otp !== '')
+						{
+							// console.log('otp verification function has been hit.')
+							
+							// console.log('mobile number is '+mobile)
+							// console.log('otp is '+otp)
+
+							$.ajax({
+								url:'otp_verification',
+								type:'post',
+								data:{'mobile':mobile,
+									'otp':otp,
+									'csrfmiddlewaretoken': '{{ csrf_token }}'},
+								success:function(data)
+								{
+									status=data.status
+
+									if(status == 0)
+									{
+										alert('otp is incorrect')
+									}
+
+									if(status == 1)
+									{
+										// alert('otp is correct')
+										url="{% url 'app_website:index' %}"
+										document.location.href=url
+									}
+								}
+							});
+						}
+					}
+					// {
+					// 	$.ajax({                       
+					// 	url: "otp_generation", 
+					// 	type:'post',
+					// 	data:{'mobile':mobile,
+					// 	'csrfmiddlewaretoken': '{{ csrf_token }}'},                
+					// 	success: function (data) 
+					// 	{   
+					// 		if(data.status == 0)
+					// 		{
+					// 			$("#ptag").show();
+					// 			$("#ptag").html("User is registered and password is correct.");
+					// 			$("#ptag").fadeOut(3000);
+					// 		}
+					// 		else if(data.status == 1)
+					// 		{
+					// 			$("#ptag").show();
+					// 			$("#ptag").html("Incorrect Email/Password.");
+					// 			$("#ptag").fadeOut(3000);
+					// 		}
+					// 	}
+					// 	});
+					// }
+						
+						}
+
+			</script>
+
+{% endblock %}

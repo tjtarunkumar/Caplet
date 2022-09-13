@@ -1,0 +1,101 @@
+<html>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<div style="margin-top: 100px; margin-left:400px;">
+    {% csrf_token %}
+        <div id="email_div" class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email" style="width: 500px;">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div id="password_div" style="display:none;" class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 500px;">
+        </div>
+        <!-- <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <button  style="margin-top: 50px; margin-left: 200px;" onClick="loadDoc()" id="submit_button"  class="btn btn-primary">Submit</button>
+    
+</div>
+
+</html>
+
+
+
+
+<script>
+
+
+
+function loadDoc()
+{
+    var email=$('#exampleInputEmail1').val()
+    var password=$('#exampleInputPassword1').val()
+
+   
+
+
+    if(email !== '' && password == ''){
+        $.ajax({
+        url:'/admin_panel/user_login_validation',
+        type:'post',
+        data:{
+            'email':email,
+            'csrfmiddlewaretoken':'{{ csrf_token }}'
+        },
+        success:function(data)
+        {
+            if(data.status == 0)
+            {
+                
+                $('#password_div').show();
+                $('#email_div').hide();
+
+            }
+
+            if(data.status == 1)
+            {
+                alert("User doesn't exists.")
+            }
+        }
+
+    });
+    }
+    
+
+
+
+
+    if(email !== '' && password !== ''){
+
+            $.ajax({
+                url:'/admin_panel/check_credentials',
+                type:'POST',
+                data:{'email':email,
+                    'password':password,
+                    'csrfmiddlewaretoken':"{{csrf_token}}"},
+                    success:function(data){
+                    if(data.result == 0)
+                    {
+                        alert('login successfull')
+                        url="/admin_panel"
+                        document.location.href=url
+                    }
+                    if(data.result == 1)
+                    {
+                        alert('Incorrect Password')
+                    }
+                    }
+            });
+   
+    }
+}
+
+
+</script>
+
+

@@ -1,0 +1,684 @@
+{% extends 'app_website/base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+
+			<header class="header header--mobile" data-sticky="true">
+				<div class="header__top">
+					<div class="header__left">
+						<p>Welcome to Welmatic Enterprise Online Shopping Store!</p>
+					</div>
+					<div class="header__right">
+						<ul class="navigation__extra">
+							<li><a href="#">Track your order</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="navigation--mobile">
+					<div class="navigation__left">
+						<a class="ps-logo" href="#"><img src="{% static 'images/logo.png' %}" alt="Welmetic- Best Marketplace to sell your product online"></a>
+					</div>
+				 </div>
+				<div class="ps-search--mobile">
+					<form class="ps-form--search-mobile" action="" method="get">
+						<div class="form-group--nest">
+							<input class="form-control" name="q" value="" type="text" placeholder="Search something...">
+							<button type="submit"><i class="fas fa-search"></i></button>
+						</div>
+					</form>
+				</div>
+			</header>
+			<div class="ps-panel--sidebar" id="cart-mobile" style="display: none">
+				<div class="ps-panel__header">
+					<h3>Shopping Cart</h3>
+				</div>
+				<div class="navigation__content">
+					<div class="ps-cart--mobile">
+						<div class="ps-cart__content">
+							<div class="ps-cart__items ps-cart_no_items">
+								<span class="cart-empty-message">No products in the cart.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="ps-panel--sidebar" id="navigation-mobile" style="display: none">
+                <div class="ps-panel__header">
+                    <h3>Categories</h3>
+                </div>
+                <div class="ps-panel__content">
+                    <ul class="menu--mobile">
+                        <li>
+							<a href="#"><i class="fas fa-bacteria"></i> Organic CBD</a>
+						</li>
+						<li class="menu-item-has-children has-mega-menu" >
+							<a href="#"><i class="fas fa-hand-holding-medical"></i>  COVID-19 vaccines</a>
+								<span class="sub-toggle"></span>
+								<div class="mega-menu">
+									<div class="mega-menu__column">
+										<a href="#"><h4>Consumer Electronic<span class="sub-toggle"></span></h4></a>
+											<ul class="mega-menu__list">
+												<li><a href="#">Home Audio &amp; Theaters</a></li>
+												<li><a href="#">TV &amp; Videos</a></li>
+												<li><a href="#">Camera, Photos &amp; Videos</a></li>
+												<li><a href="#">Cellphones &amp; Accessories</a></li>
+												<li><a href="#">Headphones</a></li>
+												<li><a href="#">Videos games</a></li>
+												<li><a href="#">Wireless Speakers</a></li>
+												<li><a href="#">Office Electronic</a></li>
+											</ul>
+									</div>
+									<div class="mega-menu__column">
+										<a href="#"><h4>Accessories &amp; Parts<span class="sub-toggle"></span></h4></a>
+										<ul class="mega-menu__list">
+											<li><a href="#">Digital Cables</a></li>
+											<li><a href="#">Audio &amp; Video Cables</a></li>
+											<li><a href="#">Batteries</a></li>
+										</ul>
+									</div>
+								</div>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-file-medical-alt"></i> $4 Prescriptions</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-cheese"></i>  Functional Foods</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-american-sign-language-interpreting"></i>  Cosmeceutical</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-person-booth"></i>  Personal Care</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-capsules"></i>  Medicine</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-briefcase-medical"></i>  Medical Equipment</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-head-side-cough"></i>  Sick</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-network-wired"></i>  Other</a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navigation--list">
+				<div class="navigation__content">
+					<a class="navigation__item ps-toggle--sidebar" href="#menu-mobile"><i class="fas fa-bars"></i> <br><span>Menu</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#navigation-mobile"><i class="fas fa-box-open"></i><br><span> Categories</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#search-sidebar"><i class="fas fa-search"></i><br><span> Search</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#cart-mobile"><i class="fas fa-shopping-cart"></i><br><span> Cart</span></a>
+				</div>
+			</div>
+            <div class="ps-panel--sidebar" id="search-sidebar" style="display: none">
+                <div class="ps-panel__header">
+                    <form class="ps-form--search-mobile" action="" method="get">
+                        <div class="form-group--nest">
+                            <input class="form-control" name="q" value="" type="text" placeholder="Search something...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="navigation__content"></div>
+            </div>
+            <div class="ps-panel--sidebar" id="menu-mobile" style="display: none">
+				<div class="ps-panel__header">
+					<h3>Menu</h3>
+				</div>
+				<div class="ps-panel__content">
+					<ul  class="menu--mobile">
+						<li class="current-menu-item "><a href="#"> Home</a></li>
+						<li class=" menu-item-has-children   ">
+							<a href="#">Shop</a>
+							<span class="sub-toggle"></span>
+							<ul  class="sub-menu">
+								<li class="">
+									<a href="#">
+										 All products
+									</a>
+								</li>
+								<li class="">
+									<a href="#">
+										 Products Of Category
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#">
+								 Blog
+							</a>
+						</li>
+						<li class="">
+							<a href="#">
+								 FAQs
+							</a>
+						</li>
+						<li class="">
+							<a href="#">
+								 Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="categories-page my-5">
+				<div class="ps-container">
+					<div class="card-wrapper">
+						<div class="card border-0"> 
+							<!-- card left -->
+							<div class="product-imgs">
+								<div class="img-display">
+									<div class="img-showcase">
+										<img src="{% static 'images/' %}{{product.product_image}}" alt="shoe image" class="img-fluid">
+										<!-- <img src="{% static 'images/img-2.jpg' %}" alt="shoe image" class="img-fluid">
+										<img src="{% static 'images/img-1.jpg' %}" alt="shoe image" class="img-fluid">
+										<img src="{% static 'images/h1_img3.jpg' %}" alt="shoe image" class="img-fluid"> -->
+									</div>
+								</div>
+								<!-- <div class = "img-select">
+									<div class = "img-item">
+										<a href = "#" data-id = "1">
+											<img src="{% static 'images/img-3.jpg' %}" alt="shoe image" class="img-fluid">
+										</a>
+									</div>
+									<div class = "img-item">
+										<a href = "#" data-id = "2">
+											<img src="{% static 'images/img-2.jpg' %}" alt="shoe image" class="img-fluid">
+										</a>
+									</div>
+									<div class = "img-item">
+										<a href = "#" data-id = "3">
+											<img src="{% static 'images/img-1.jpg' %}" alt="shoe image" class="img-fluid">
+										</a>
+									</div>
+									<div class = "img-item">
+										<a href = "#" data-id = "4">
+											<img src="{% static 'images/h1_img3.jpg' %}" alt="shoe image" class="img-fluid">
+										</a>
+									</div>
+								</div> -->
+							</div>
+							<!-- card right -->
+							<div class = "product-content">
+								<h2 class = "product-title">{{product.name}}</h2>
+								<div class = "product-rating">
+									<i class = "fas fa-star"></i>
+									<i class = "fas fa-star"></i>
+									<i class = "fas fa-star"></i>
+									<i class = "fas fa-star"></i>
+									<i class = "fas fa-star-half-alt"></i>
+									<span>4.7(21)</span>
+								</div>
+								<div class = "product-price">
+									<p class = "new-price"><span>Rs.{{product.price}}</span></p>
+								</div>
+								<div class = "purchase-info">
+									<div class="btn-seller">
+										<button onClick="data()" class="btn">Add to Cart <i class = "fas fa-shopping-cart"></i></button>
+									</div>
+
+									<input type="hidden" id="product_code" value="{{product.product_code}}">
+									<input type="hidden" id="user_mobile" value="{{request.session.mobile_number}}">
+									<input type="hidden" id="seller_id" value="{{product.seller_id}}">
+									<input type="hidden" id="price" value="{{product.price}}">
+
+									<div class="wishlist-section mr-3">
+										<a href="#"><i class="far fa-heart"></i> Add to wishlist</a>
+									</div>
+								</div>
+								<div class="vivamus">
+									<p>&#8226; Vivamus dapibus ullamcorper lorem</p>
+									<p>&#8226; Duis gravida quis velit vitae laoreet</p>
+									<p>&#8226; In ac ipsum vel quam fermentum</p>
+								</div>
+								<div class="quam">
+									<p><strong>SKU:</strong> N/A-250</p>
+									<p><strong>Categories:</strong> Diabetes, Eyewear, Health Conditions</p>
+									<p><strong>Tags:</strong> fruits, healthy</p>
+								</div>
+								<div class = "social-links">
+									<p class="mr-3 mb-0"><strong>Share At: </strong></p>
+									<a href = "#">
+									  <i class = "fab fa-facebook-f"></i>
+									</a>
+									<a href = "#">
+									  <i class = "fab fa-twitter"></i>
+									</a>
+									<a href = "#">
+									  <i class = "fab fa-instagram"></i>
+									</a>
+									<a href = "#">
+									  <i class = "fab fa-whatsapp"></i>
+									</a>
+									<a href = "#">
+									  <i class = "fab fa-pinterest"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="tabs_section-page">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item">
+							  <a class="nav-link active" data-toggle="tab" href="#description">Description</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" data-toggle="tab" href="#additional">Additional information</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" data-toggle="tab" href="#reviews">Reviews</a>
+							</li>
+						</ul>
+						  <!-- Tab panes -->
+						<div class="tab-content">
+							<div id="description" class="tab-pane active"><br>
+								<h5>Maldox 500/25mg Tablets 3 Tablets</h5>
+								<p>This is a combination of sulfadoxine, a sulfa medicine, and pyrimethamine combination is used to treat malaria. Pyrimethamine and sulfadoxine may also be used to prevent malaria in people who are living in or will be traveling to, an area where there is a chance of getting malaria.</p>
+								<h5>Maldox 500/25mg Tablets 3 Tablets</h5>
+								<p>This is a combination of sulfadoxine, a sulfa medicine, and pyrimethamine combination is used to treat malaria. Pyrimethamine and sulfadoxine may also be used to prevent malaria in people who are living in or will be traveling to, an area where there is a chance of getting malaria.</p>
+								<h5>Maldox 500/25mg Tablets 3 Tablets</h5>
+								<p>This is a combination of sulfadoxine, a sulfa medicine, and pyrimethamine combination is used to treat malaria. Pyrimethamine and sulfadoxine may also be used to prevent malaria in people who are living in or will be traveling to, an area where there is a chance of getting malaria.</p>
+								<h5>Maldox 500/25mg Tablets 3 Tablets</h5>
+								<p>This is a combination of sulfadoxine, a sulfa medicine, and pyrimethamine combination is used to treat malaria. Pyrimethamine and sulfadoxine may also be used to prevent malaria in people who are living in or will be traveling to, an area where there is a chance of getting malaria.</p>
+								<h5>Maldox 500/25mg Tablets 3 Tablets</h5>
+								<p>This is a combination of sulfadoxine, a sulfa medicine, and pyrimethamine combination is used to treat malaria. Pyrimethamine and sulfadoxine may also be used to prevent malaria in people who are living in or will be traveling to, an area where there is a chance of getting malaria.</p>
+								<h5>Maldox 500/25mg Tablets 3 Tablets</h5>
+								<p>This is a combination of sulfadoxine, a sulfa medicine, and pyrimethamine combination is used to treat malaria. Pyrimethamine and sulfadoxine may also be used to prevent malaria in people who are living in or will be traveling to, an area where there is a chance of getting malaria.</p>
+							</div>
+							<div id="additional" class="tab-pane fade"><br>
+								<table class="table table-light table-striped">
+									<tbody>
+									  <tr>
+										<td>Stand Up</td>
+										<td>35″L x 24″W x 37-45″H(front to back wheel)</td>
+									  </tr>
+									  <tr>
+										<td>Folded (w/o wheels)</td>
+										<td>32.5″L x 18.5″W x 16.5″H</td>
+									  </tr>
+									  <tr>
+										<td>Folded (w/ wheels)</td>
+										<td>32.5″L x 24″W x 18.5″H</td>
+									  </tr>
+									   <tr>
+										<td>Stand Up</td>
+										<td>35″L x 24″W x 37-45″H(front to back wheel)</td>
+									  </tr>
+									  <tr>
+										<td>Folded (w/o wheels)</td>
+										<td>32.5″L x 18.5″W x 16.5″H</td>
+									  </tr>
+									  <tr>
+										<td>Folded (w/ wheels)</td>
+										<td>32.5″L x 24″W x 18.5″H</td>
+									  </tr>
+									   <tr>
+										<td>Stand Up</td>
+										<td>35″L x 24″W x 37-45″H(front to back wheel)</td>
+									  </tr>
+									  <tr>
+										<td>Folded (w/o wheels)</td>
+										<td>32.5″L x 18.5″W x 16.5″H</td>
+									  </tr>
+									  <tr>
+										<td>Folded (w/ wheels)</td>
+										<td>32.5″L x 24″W x 18.5″H</td>
+									  </tr>
+									</tbody>
+								  </table>
+							</div>
+							<div id="reviews" class="tab-pane fade"><br>
+								<div class="reviews_section">
+									<div class="media m-0 p-0">
+										<div class="media-body">
+											<h5>Reyansh Arya</h5>
+											<small>2022-01-10</small>
+										</div>
+									</div>
+									<ul class="star-rating">
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+									</ul>
+									<p class="mb-0">Loopskill provide today's professionals with learning opportunity in various spheres of competence. The enhanced skillset helps an individual to build their careers and give appropriate direction. Moreover, the certificate examination helps to improve and garnish the domain knowledge with practical approach in today's versatile work culture.</p>
+								</div>
+								<div class="reviews_section">
+									<div class="media m-0 p-0">
+										<div class="media-body">
+											<h5>Reyansh Arya</h5>
+											<small>2022-01-10</small>
+										</div>
+									</div>
+									<ul class="star-rating">
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+									</ul>
+									<p class="mb-0">Loopskill provide today's professionals with learning opportunity in various spheres of competence. The enhanced skillset helps an individual to build their careers and give appropriate direction. Moreover, the certificate examination helps to improve and garnish the domain knowledge with practical approach in today's versatile work culture.</p>
+								</div>
+								<div class="reviews_section">
+									<div class="media m-0 p-0">
+										<div class="media-body">
+											<h5>Reyansh Arya</h5>
+											<small>2022-01-10</small>
+										</div>
+									</div>
+									<ul class="star-rating">
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+										<li><a href="javascript:;"><i class="fas fa-star"></i></a></li>
+									</ul>
+									<p class="mb-0">Loopskill provide today's professionals with learning opportunity in various spheres of competence. The enhanced skillset helps an individual to build their careers and give appropriate direction. Moreover, the certificate examination helps to improve and garnish the domain knowledge with practical approach in today's versatile work culture.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="related-products">
+						<div class="d-flex justify-content-between">
+							<h3>Related products</h3>
+							<a href="#" class="text-primary"><strong>View all</strong></a>
+						</div>
+						<hr>
+						<div class="testimonial-slider owl-carousel mt-5">
+							<div class="testimonial-items">
+								<div class="testimonial-item-wrapper">
+									<div class="tesimonial-img">
+										<img src="{% static 'images/img-1.jpg' %}" class="img-fluid">
+									</div>
+									<div class="wishlist">
+										<span><i class="far fa-heart"></i></span>
+									</div>
+									<div class="data-box">
+										<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+										<h3><a href="#">$ 140.00</a></h3>
+										<div class="d-flex justify-content-between align-items-center">
+											<ul class="star-rating">
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+											</ul>
+											<div class="cart-bag">
+												<i class="fas fa-shopping-bag"></i>
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-items">
+								<div class="testimonial-item-wrapper">
+									<div class="tesimonial-img">
+										<img src="{% static 'images/img-2.jpg' %}" class="img-fluid">
+									</div>
+									<div class="wishlist">
+										<span><i class="far fa-heart"></i></span>
+									</div>
+									<div class="data-box">
+										<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+										<h3><a href="#">$ 140.00</a></h3>
+										<div class="d-flex justify-content-between align-items-center">
+											<ul class="star-rating">
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+											</ul>
+											<div class="cart-bag">
+												<i class="fas fa-shopping-bag"></i>
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-items">
+								<div class="testimonial-item-wrapper">
+									<div class="tesimonial-img">
+										<img src="{% static 'images/img-3.jpg' %}" class="img-fluid">
+									</div>
+									<div class="wishlist">
+										<span><i class="far fa-heart"></i></span>
+									</div>
+									<div class="data-box">
+										<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+										<h3><a href="#">$ 140.00</a></h3>
+										<div class="d-flex justify-content-between align-items-center">
+											<ul class="star-rating">
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+											</ul>
+											<div class="cart-bag">
+												<i class="fas fa-shopping-bag"></i>
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-items">
+								<div class="testimonial-item-wrapper">
+									<div class="tesimonial-img">
+										<img src="{% static 'images/img-1.jpg' %}" class="img-fluid">
+									</div>
+									<div class="wishlist">
+										<span><i class="far fa-heart"></i></span>
+									</div>
+									<div class="data-box">
+										<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+										<h3><a href="#">$ 140.00</a></h3>
+										<div class="d-flex justify-content-between align-items-center">
+											<ul class="star-rating">
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+											</ul>
+											<div class="cart-bag">
+												<i class="fas fa-shopping-bag"></i>
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-items">
+								<div class="testimonial-item-wrapper">
+									<div class="tesimonial-img">
+										<img src="{% static 'images/img-2.jpg' %}" class="img-fluid">
+									</div>
+									<div class="wishlist">
+										<span><i class="far fa-heart"></i></span>
+									</div>
+									<div class="data-box">
+										<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+										<h3><a href="#">$ 140.00</a></h3>
+										<div class="d-flex justify-content-between align-items-center">
+											<ul class="star-rating">
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+												<li><a href="#"><i class="fas fa-star"></i></a></li>
+											</ul>
+											<div class="cart-bag">
+												<i class="fas fa-shopping-bag"></i>
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+		
+			<div class="section-footer-bottom my-5 py-5">
+				<div class="ps-container">
+					<div class="bg-footer">
+						<div class="row align-items-center">
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="logo_page">
+									<img src="{% static 'images/logo.png' %}" class="img-fluid">
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="logo_page">
+									<div class="media align-items-center p-3">
+										<i class="fas fa-comments"></i>
+										<div class="media-body">
+											<p class="text-muted">Got Questions ? Call us 24/7! </p>
+											<h3 class="mb-0 text-white">+01 2222 3456 88</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="input-group">
+									<input type="text" class="form-control bg-white" placeholder="Search">
+									<div class="input-group-append">
+										<button class="btn btn-success px-5" type="submit">Subscribe</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<section class="footer">
+				<div class="ps-container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Contact</h4>
+								<p><span><i class="fas fa-map-marker-alt"></i> </span>&#10240; 121 S Jane Ln Enid, Oklahoma(OK), 73703</p>
+								<p><span><i class="fas fa-envelope"></i> </span>&#10240; myshopemail@domain.com</p>
+								<p><span><i class="fas fa-clock"></i> </span>&#10240; Mon-Sat: 9:00pm - 5:00pm Sun: Closed</p>
+								<div class="footer-widget-listing social-icons-footer mt-5">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-linkedin-in"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Find It Fast</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Useful links</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Customer Care</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="footer-bottom-section d-flex justify-content-between align-items-center py-4">
+						<p class="mb-0">Copyright © 2022 Caplet Pharmacy - All Rights Reserved</p>
+						<img src="{% static 'images/payment.png' %}" class="img-fluid">
+					</div>
+				</div>
+			</section>
+
+			<script>
+
+				function data()
+				{
+					
+
+					var product_code=$('#product_code').val()
+					var user_mobile=$('#user_mobile').val()
+					var seller_id=$('#seller_id').val()
+					var price=$('#price').val()
+					
+					var session="{{session}}"
+					console.log('session data is'+session);
+
+					if(session !== 'None')
+					{
+						if(product_code !== '')
+						{
+							if(user_mobile !== '')
+							{
+								if(seller_id !== '')
+								{
+									$.ajax({
+									url:"/product_purchase",
+									type:"POST",
+									data:{'product_code':product_code,'user_mobile':user_mobile,'seller_id':seller_id,'price':price,'csrfmiddlewaretoken':'{{ csrf_token }}'},
+									success:function(data)
+									{
+										if(data.status == 0)
+										{
+											alert('Product added to cart.')
+											var url = "{% url 'app_website:cart' session %}"
+											console.log(url)
+											document.location.href=url
+										}
+									}
+								
+									});
+								}
+								
+							}
+						}
+					}
+
+					else
+					{
+						alert('Please login first to continue shopping.')
+					}
+
+				}
+
+			</script>
+		
+		
+		
+	{% endblock %}

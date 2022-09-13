@@ -1,0 +1,511 @@
+{% extends 'app_website/base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+		<header class="header header--mobile" data-sticky="true">
+			<div class="header__top">
+				<div class="header__left">
+					<p>Welcome to Welmatic Enterprise Online Shopping Store!</p>
+				</div>
+				<div class="header__right">
+					<ul class="navigation__extra">
+						<li><a href="#">Track your order</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="navigation--mobile">
+				<div class="navigation__left">
+					<a class="ps-logo" href="#"><img src="{% static 'images/logo.png' %}" alt="Welmetic- Best Marketplace to sell your product online"></a>
+				</div>
+			 </div>
+			<div class="ps-search--mobile">
+				<form class="ps-form--search-mobile" action="" method="get">
+					<div class="form-group--nest">
+						<input class="form-control" name="q" value="" type="text" placeholder="Search something...">
+						<button type="submit"><i class="fas fa-search"></i></button>
+					</div>
+				</form>
+			</div>
+		</header>
+        <div class="ps-panel--sidebar" id="cart-mobile" style="display: none">
+			<div class="ps-panel__header">
+				<h3>Shopping Cart</h3>
+			</div>
+            <div class="navigation__content">
+				<div class="ps-cart--mobile">
+					<div class="ps-cart__content">
+						<div class="ps-cart__items ps-cart_no_items">
+							<span class="cart-empty-message">No products in the cart.</span>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+            <div class="ps-panel--sidebar" id="navigation-mobile" style="display: none">
+                <div class="ps-panel__header">
+                    <h3>Categories</h3>
+                </div>
+                <div class="ps-panel__content">
+                    <ul class="menu--mobile">
+                        <li>
+							<a href="#"><i class="fas fa-bacteria"></i> Organic CBD</a>
+						</li>
+						<li class="menu-item-has-children has-mega-menu" >
+							<a href="#"><i class="fas fa-hand-holding-medical"></i>  COVID-19 vaccines</a>
+								<span class="sub-toggle"></span>
+								<div class="mega-menu">
+									<div class="mega-menu__column">
+										<a href="#"><h4>Consumer Electronic<span class="sub-toggle"></span></h4></a>
+											<ul class="mega-menu__list">
+												<li><a href="#">Home Audio &amp; Theaters</a></li>
+												<li><a href="#">TV &amp; Videos</a></li>
+												<li><a href="#">Camera, Photos &amp; Videos</a></li>
+												<li><a href="#">Cellphones &amp; Accessories</a></li>
+												<li><a href="#">Headphones</a></li>
+												<li><a href="#">Videos games</a></li>
+												<li><a href="#">Wireless Speakers</a></li>
+												<li><a href="#">Office Electronic</a></li>
+											</ul>
+									</div>
+									<div class="mega-menu__column">
+										<a href="#"><h4>Accessories &amp; Parts<span class="sub-toggle"></span></h4></a>
+										<ul class="mega-menu__list">
+											<li><a href="#">Digital Cables</a></li>
+											<li><a href="#">Audio &amp; Video Cables</a></li>
+											<li><a href="#">Batteries</a></li>
+										</ul>
+									</div>
+								</div>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-file-medical-alt"></i> $4 Prescriptions</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-cheese"></i>  Functional Foods</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-american-sign-language-interpreting"></i>  Cosmeceutical</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-person-booth"></i>  Personal Care</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-capsules"></i>  Medicine</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-briefcase-medical"></i>  Medical Equipment</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-head-side-cough"></i>  Sick</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-network-wired"></i>  Other</a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navigation--list">
+				<div class="navigation__content">
+					<a class="navigation__item ps-toggle--sidebar" href="#menu-mobile"><i class="fas fa-bars"></i> <br><span>Menu</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#navigation-mobile"><i class="fas fa-box-open"></i><br><span> Categories</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#search-sidebar"><i class="fas fa-search"></i><br><span> Search</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#cart-mobile"><i class="fas fa-shopping-cart"></i><br><span> Cart</span></a>
+				</div>
+			</div>
+            <div class="ps-panel--sidebar" id="search-sidebar" style="display: none">
+                <div class="ps-panel__header">
+                    <form class="ps-form--search-mobile" action="" method="get">
+                        <div class="form-group--nest">
+                            <input class="form-control" name="q" value="" type="text" placeholder="Search something...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="navigation__content"></div>
+            </div>
+            <div class="ps-panel--sidebar" id="menu-mobile" style="display: none">
+				<div class="ps-panel__header">
+					<h3>Menu</h3>
+				</div>
+				<div class="ps-panel__content">
+					<ul  class="menu--mobile">
+						<li class="current-menu-item "><a href="#"> Home</a></li>
+						<li class=" menu-item-has-children   ">
+							<a href="#">Shop</a>
+							<span class="sub-toggle"></span>
+							<ul  class="sub-menu">
+								<li class="">
+									<a href="#">
+										 All products
+									</a>
+								</li>
+								<li class="">
+									<a href="#">
+										 Products Of Category
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#">
+								 Blog
+							</a>
+						</li>
+						<li class="">
+							<a href="#">
+								 FAQs
+							</a>
+						</li>
+						<li class="">
+							<a href="#">
+								 Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="slidermar">
+				<div class="inner-banner">
+					<div class="ps-container">
+						<div class="layer">
+							<h3>Cart</h3>
+							<p>Home/Cart</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+			
+			<section  class="categories-page">
+				<div class="ps-container">
+					<div class="row">
+						<div class="col-lg-8 col-md-8 col-12">
+							<div class="cart_page_design">
+								<table  class="table">
+									<thead>
+										<tr>
+											<th class="border-0"></th>
+											<th class="border-0">Product</th>
+											<th class="border-0 text-center">Price</th>
+											<th class="border-0 text-center">Quantity</th>
+											<th class="border-0 text-center">Subtotal</th>
+											<th class="border-0 text-center">Remove</th>
+										</tr>
+									</thead>
+									<tbody id="tableData" class="border-bottom">
+										
+										
+
+										{% for y in product_detail %}
+											{% for x in y %}
+
+											
+										<tr class="product_data"> 
+											<input name="hidden_product_code" type="hidden" class="product_id" value="{{x.product_code.product_code}}">
+											<input name="hidden_price" type="hidden" class="product_price" value="{{x.product_code.price}}">
+											<td><img src="{% static 'images/'  %}{{x.product_code.product_image}}" class="img-fluid"></td>
+											<td><h4><a href="#">{{x.product_code.name}}</a></h4></td>
+											<td id="product_price" class="text-center "><span class="text-danger ">&#8377; {{x.product_code.price}}</span></td>
+											<td class="text-center">
+												<div class="counter m-0">
+													<span class="down decrease_quantity" onClick='decreaseCount(event, this)'>-</span>
+													<input type="text " class="qty-input" value="{{x.quantity}}">
+													<span class="up increase_quantity" onClick='increaseCount(event, this)'>+</span>
+												</div>
+											</td>
+											<td class="text-center ">&#8377;<span class="text sub_total">{{x.total_amount}}</span></td>
+											<td class="text-center"><a href="#"><i class="fas fa-trash delete_product"></i></a></td>
+										</tr>
+											{% endfor %}
+										{% endfor %}
+										
+										<!-- <tr>
+											<td><img src="{% static 'images/h1_img3.jpg' %}" class="img-fluid"></td>
+											<td><h4><a href="#">Botanic Choice Aloe Vera 500 mg Herbal Supplement Capsules</a></h4></td>
+											<td class="text-center"><span class="text-danger">&#8377; 100.00</span></td>
+											<td class="text-center">
+												<div class="counter m-0">
+													<span class="down" onClick='decreaseCount(event, this)'>-</span>
+													<input type="text" value="1">
+													<span class="up" onClick='increaseCount(event, this)'>+</span>
+												</div>
+											</td>
+											<td class="text-center">&#8377; 100.00</td>
+											<td class="text-center"><a href="#"><i class="fas fa-trash"></i></a></td>
+										</tr>
+										<tr>
+											<td><img src="{% static 'images/h1_img3.jpg' %}" class="img-fluid"></td>
+											<td><h4><a href="#">Botanic Choice Aloe Vera 500 mg Herbal Supplement Capsules</a></h4></td>
+											<td class="text-center"><span class="text-danger">&#8377; 100.00</span></td>
+											<td class="text-center">
+												<div class="counter m-0">
+													<span class="down" onClick='decreaseCount(event, this)'>-</span>
+													<input type="text" value="1">
+													<span class="up" onClick='increaseCount(event, this)'>+</span>
+												</div>
+											</td>
+											<td class="text-center">&#8377; 100.00</td>
+											<td class="text-center"><a href="#"><i class="fas fa-trash"></i></a></td>
+										</tr> -->
+									</tbody>
+								</table>
+								<div class="row mt-5">
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="apply_cupon">
+											<div class="input-group mb-3">
+												<input type="text" class="form-control" placeholder="Coupon Code....">
+												<div class="input-group-append btn-seller">
+													<a href="#" class="btn btn-success" type="submit">Apply coupon</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="text-right">
+											<div class="btn-seller">
+												<a href="#" class="btn">Update Cart</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12">
+							<div class="cart_page">
+								<h3>Cart totals</h3>
+								<table class="table">
+									<tbody>
+									  <tr>
+										<td>Subtotal</td>
+										<td class="text-primary ">&#8377;<span class="text Subtotal">{{total_amount}}</span></td>
+									  </tr>
+									  <tr>
+										<td>Shipping</td>
+										<td>Free Shipping</td>
+									  </tr>
+									  <tr>
+										<td>Total</td>
+										<td >&#8377;<span class="text Subtotal">{{total_amount}}</span></td>
+									  </tr>
+									</tbody>
+								</table>
+								<div class="btn-seller">
+									<a href="#" class="btn btn-block">Proceed to checkout</a>
+								</div>
+								<h5 class="text-center my-4">Or</h5>
+								<div class="btn-seller warring">
+									<a href="#" class="btn btn-block"><img src="{% static 'images/pay-pal.png' %}" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<div class="section-footer-bottom my-5 py-5">
+				<div class="ps-container">
+					<div class="bg-footer">
+						<div class="row align-items-center">
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="logo_page">
+									<img src="{% static 'images/logo.png' %}" class="img-fluid">
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="logo_page">
+									<div class="media align-items-center p-3">
+										<i class="fas fa-comments"></i>
+										<div class="media-body">
+											<p class="text-muted">Got Questions ? Call us 24/7! </p>
+											<h3 class="mb-0 text-white">+01 2222 3456 88</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="input-group">
+									<input type="text" class="form-control bg-white" placeholder="Search">
+									<div class="input-group-append">
+										<button class="btn btn-success px-5" type="submit">Subscribe</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<section class="footer">
+				<div class="ps-container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Contact</h4>
+								<p><span><i class="fas fa-map-marker-alt"></i> </span>&#10240; 121 S Jane Ln Enid, Oklahoma(OK), 73703</p>
+								<p><span><i class="fas fa-envelope"></i> </span>&#10240; myshopemail@domain.com</p>
+								<p><span><i class="fas fa-clock"></i> </span>&#10240; Mon-Sat: 9:00pm - 5:00pm Sun: Closed</p>
+								<div class="footer-widget-listing social-icons-footer mt-5">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-linkedin-in"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Find It Fast</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Useful links</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Customer Care</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="footer-bottom-section d-flex justify-content-between align-items-center py-4">
+						<p class="mb-0">Copyright © 2022 Caplet Pharmacy - All Rights Reserved</p>
+						<img src="{% static 'images/payment.png' %}" class="img-fluid">
+					</div>
+				</div>
+			</section>
+
+
+			<script>
+
+
+
+
+		$(document).ready(function () {
+        $('.increase_quantity').click(function (e) {
+            e.preventDefault();
+
+            var session="{{session}}"
+			
+
+            var product_id = $(this).closest('.product_data').find('.product_id').val();
+            var quantity = $(this).closest('.product_data').find('.qty-input').val();
+            var price = $(this).closest('.product_data').find('.product_price').val();
+
+			sub_total=price*quantity
+			$(this).closest('.product_data').find('.sub_total').text(sub_total);
+			
+
+
+			$.ajax({
+				url:"/change_quantity_cart",
+				type:"POST",
+				data:{'buyer_mobile':session,
+					 'product_id':product_id,
+					'quantity':quantity,
+					'csrfmiddlewaretoken':"{{csrf_token}}"},
+				success:function(data){
+					total_amount=data.total_cart_amount;
+					$('.Subtotal').text(total_amount)
+				}
+				
+			});
+
+           
+        });
+    	});
+
+		$(document).ready(function () {
+        $('.decrease_quantity').click(function (e) {
+            e.preventDefault();
+
+			var session="{{session}}"
+
+            var product_id = $(this).closest('.product_data').find('.product_id').val();
+            var quantity = $(this).closest('.product_data').find('.qty-input').val();
+			var price = $(this).closest('.product_data').find('.product_price').val();
+
+			sub_total=price*quantity
+			$(this).closest('.product_data').find('.sub_total').text(sub_total);
+
+
+			$.ajax({
+				url:"/change_quantity_cart",
+				type:"POST",
+				data:{'buyer_mobile':session,
+					 'product_id':product_id,
+					'quantity':quantity,
+					'csrfmiddlewaretoken':"{{csrf_token}}"},
+				success:function(data){
+					total_amount=data.total_cart_amount;
+					$('.Subtotal').text(total_amount)
+
+				}
+				
+			});
+           
+        });
+    	});
+
+
+		$(document).ready(function () {
+        $('.delete_product').click(function (e) {
+            e.preventDefault();
+
+			var session="{{session}}"
+
+            var product_id = $(this).closest('.product_data').find('.product_id').val();
+		
+
+
+			$.ajax({
+				url:"/delete_product",
+				type:"POST",
+				data:{'buyer_mobile':session,
+					 'product_id':product_id,
+					'csrfmiddlewaretoken':"{{csrf_token}}"},
+					success:function(data){
+						if(data.status == 0)
+						{
+							var url = "{% url 'app_website:cart' session %}"
+							console.log(url);
+							document.location.href=url
+						}
+				}
+				
+			});
+           
+        });
+    	});
+
+		
+			
+
+			</script>
+			
+{% endblock %}

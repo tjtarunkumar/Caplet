@@ -1,0 +1,35 @@
+.ps-footer {
+    padding-top: 70px;
+    background: #f7f7f7;
+}
+.ps-shop-brand {
+    display: none;
+}
+.ps-faqs table.table.ps-table--faqs {
+    display: none;
+}
+.ps-block__content h3::after {
+    content: "Download Welmatic App Now!";
+    font-size: 33px;
+}
+.ps-block--download-app h3 {
+    font-size: 0px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+@media (max-width:1400px){
+  #homepage-1 .ps-top-categories .row .col-lg-3 {
+    max-width: 12.5%;
+}
+}
+ @media (max-width:768px){
+  #homepage-1 .ps-top-categories .row .col-lg-3 {
+    max-width:50%;
+}
+}
+ @media (max-width:576px){
+  #homepage-1 .ps-top-categories .row .col-lg-3 {
+    max-width:50%;
+}
+}

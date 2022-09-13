@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1" name="viewport"/>
+        <meta name="csrf-token" content="9lAQ9v0tBPSMWpR2RcOqZVORMNWO1SmGPL6iqTxv">
+        <!-- Fonts-->
+
+        {% load static %}
+
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&amp;amp;subset=latin-ext" rel="stylesheet" type="text/css">
+        <!-- CSS Library-->
+		<title>Caplet</title>
+		<link media="all" type="text/css" rel="stylesheet" href="{% static 'css/demo.css'%}">
+		<link media="all" type="text/css" rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+		<link media="all" type="text/css" rel="stylesheet" href="{%static 'css/owl.carousel.min.css'%}">
+		<link media="all" type="text/css" rel="stylesheet" href="{%static 'css/owl.theme.default.min.css'%}">
+		<link media="all" type="text/css" rel="stylesheet" href="{%static 'css/lightgallery.min.css'%}">
+		<link media="all" type="text/css" rel="stylesheet" href="{%static 'css/fontawesome-stars.css'%}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<link media="all" type="text/css" rel="stylesheet" href="{%static 'css/style.css'%}">
+		<link media="all" type="text/css" rel="stylesheet" href="{%static 'css/style.integration.css'%}">
+    </head>
+    <body>
+		<header class="header header--1" data-sticky="true">
+            <div class="header__top">
+                <div class="ps-container">
+                    <div class="header__left">
+                        <div class="menu--product-categories">
+                            <div class="menu__toggle"><i class="icon-menu"></i><span> Shop by Department</span></div>
+								<div class="menu__content" style="display: none">
+									<ul class="menu--dropdown">
+										<li  class="menu-item-has-children has-mega-menu" >
+											<a href="#"> <i class=""></i>  electronic Ai products</a>
+											<span class="sub-toggle"></span>
+											<div class="mega-menu">
+												<div class="mega-menu__column">
+													<a href="#">car gps tracker device</a>
+												</div>
+											</div>
+										</li>
+										<li >
+											<a href="#"> <i class="icon-star"></i>  Hot Promotions</a>
+										</li>
+										<li  class="menu-item-has-children has-mega-menu" >
+											<a href="#"> <i class="icon-laundry"></i>  Electronics</a>
+											<span class="sub-toggle"></span>
+											<div class="mega-menu">
+												<div class="mega-menu__column">
+													<a href="#"><h4>Consumer Electronic<span class="sub-toggle"></span></h4></a>
+														<ul class="mega-menu__list">
+															<li><a href="#">Home Audio &amp; Theaters</a></li>
+															<li><a href="#">TV &amp; Videos</a></li>
+															<li><a href="#">Camera, Photos &amp; Videos</a></li>
+															<li><a href="#">Cellphones &amp; Accessories</a></li>
+															<li><a href="#">Headphones</a></li>
+															<li><a href="#">Videos games</a></li>
+															<li><a href="#">Wireless Speakers</a></li>
+															<li><a href="#">Office Electronic</a></li>
+														</ul>
+												</div>
+												<div class="mega-menu__column">
+													<a href="#"><h4>Accessories &amp; Parts<span class="sub-toggle"></span></h4></a>
+													<ul class="mega-menu__list">
+														<li><a href="#">Digital Cables</a></li>
+														<li><a href="#">Audio &amp; Video Cables</a></li>
+														<li><a href="#">Batteries</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li >
+											<a href="#"> <i class="icon-shirt"></i>  Clothing</a>
+										</li>
+										<li  class="menu-item-has-children has-mega-menu" >
+											<a href="#"> <i class="icon-desktop"></i>  Computers</a>
+											<span class="sub-toggle"></span>
+											<div class="mega-menu">
+												<div class="mega-menu__column">
+													<a href="#"><h4>Computer &amp; Technologies<span class="sub-toggle"></span></h4></a>
+														<ul class="mega-menu__list">
+															<li><a href="#">Computer &amp; Tablets</a></li>
+															<li><a href="#">Laptop</a></li>
+															<li><a href="#">Monitors</a></li>
+															<li><a href="#">Computer Components</a></li>
+														</ul>
+												</div>
+												<div class="mega-menu__column">
+													<a href="#"><h4>Networking<span class="sub-toggle"></span></h4></a>
+														<ul class="mega-menu__list">
+															<li><a href="#">Drive &amp; Storages</a></li>
+															<li><a href="#">Gaming Laptop</a></li>
+															<li><a href="#">Security &amp; Protection</a></li>
+															<li><a href="#">Accessories</a></li>
+														</ul>
+												</div>
+											</div>
+										</li>
+										
+									</ul>
+								</div>
+						</div>
+						<a class="ps-logo" href="#"><img src="{% static 'images/logo.png'%}" alt="Welmetic- Best Marketplace to sell your product online" height="60"></a>
+                    </div>
+                    <div class="header__center">
+                        <form class="ps-form--quick-search" action="" data-ajax-url="" method="get">
+                            <div class="form-group--icon">
+                                <div class="product-cat-label">All <i class="fas fa-angle-down"></i></div>
+                                    <select class="form-control product-category-select" name="categories[]">
+                                        <option value="0">All</option>
+										<option class="level-0">Health &amp; Beauty</option>
+										<option class="level-0">Shoes</option>
+										<option class="level-0">Jewelry &amp; Watch</option>
+										<option class="level-0">Technology Toys</option>
+                                    </select>
+                            </div>
+							<input class="form-control" name="q" type="text" placeholder="Search Products...." id="input-search" autocomplete="off">
+							<div class="spinner-icon">
+								<i class="fa fa-spin fa-spinner"></i>
+							</div>
+							<button type="submit">Search</button>
+						</form>
+					</div>
+                        <div class="header__right">
+                            <div class="header__actions">
+                                <a class="header__extra btn-wishlist" href="#"><i class="far fa-heart"></i><span><i>0</i></span></a>
+                                <div class="ps-cart--mini">
+                                    <a class="header__extra btn-shopping-cart" href="#"><i class="fas fa-cart-arrow-down"></i><span><i>0</i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <nav class="navigation">
+                <div class="ps-container">
+                    <div class="navigation__left">
+                        <div class="menu--product-categories">
+                            <div class="menu__toggle"><i class="fas fa-bars"></i><span> Shop by Department</span></div>
+								<div class="menu__content" style="display: none">
+									<ul class="menu--dropdown">
+										<li>
+											<a href="#"><i class="fas fa-bacteria"></i> Organic CBD</a>
+										</li>
+										<li  class="menu-item-has-children has-mega-menu" >
+											<a href="#"><i class="fas fa-hand-holding-medical"></i>  COVID-19 vaccines</a>
+												<span class="sub-toggle"></span>
+												<div class="mega-menu">
+													<div class="mega-menu__column">
+														<a href="#"><h4>Consumer Electronic<span class="sub-toggle"></span></h4></a>
+															<ul class="mega-menu__list">
+																<li><a href="#">Home Audio &amp; Theaters</a></li>
+																<li><a href="#">TV &amp; Videos</a></li>
+																<li><a href="#">Camera, Photos &amp; Videos</a></li>
+																<li><a href="#">Cellphones &amp; Accessories</a></li>
+																<li><a href="#">Headphones</a></li>
+																<li><a href="#">Videos games</a></li>
+																<li><a href="#">Wireless Speakers</a></li>
+																<li><a href="#">Office Electronic</a></li>
+															</ul>
+													</div>
+													<div class="mega-menu__column">
+														<a href="#"><h4>Accessories &amp; Parts<span class="sub-toggle"></span></h4></a>
+															<ul class="mega-menu__list">
+																<li><a href="#">Digital Cables</a></li>
+																<li><a href="#">Audio &amp; Video Cables</a></li>
+																<li><a href="#">Batteries</a></li>
+															</ul>
+													</div>
+												</div>
+										</li>
+										<li >
+											<a href="#"> <i class="fas fa-file-medical-alt"></i> $4 Prescriptions</a>
+										</li>
+										<li >
+											<a href="#"> <i class="fas fa-cheese"></i>  Functional Foods</a>
+										</li>
+										<li >
+											<a href="#"> <i class="fas fa-american-sign-language-interpreting"></i>  Cosmeceutical</a>
+										</li>
+										<li >
+											<a href="#"> <i class="fas fa-person-booth"></i>  Personal Care</a>
+										</li>
+										<li >
+											<a href="#"> <i class="fas fa-capsules"></i>  Medicine</a>
+										</li>
+										<li >
+											<a href="#"> <i class="fas fa-briefcase-medical"></i>  Medical Equipment</a>
+										</li>
+										<li >
+											<a href="#"> <i class="fas fa-head-side-cough"></i>  Sick</a>
+										</li>
+										<li >
+											<a href="#"> <i class="fas fa-network-wired"></i>  Other</a>
+										</li>
+									</ul>
+								</div>
+						</div>
+					</div>
+                    <div class="navigation__right">
+                        <ul  class="menu  ml-auto">
+							<li class=""><a href="#">Home</a></li>
+							<li class=""><a href="#">About Us</a></li>
+							<li class=" menu-item-has-children current-menu-item"><a href="#"> Shop  <i class="fas fa-angle-down"></i></a>
+								<ul  class="sub-menu">
+									<li class="current-menu-item"><a href="#"> All products</a></li>
+									<li class=""><a href="#"> Products Of Category</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="#"> Blog</a></li>
+							<li class=""><a href="#">Contact</a></li>
+						</ul>
+						<ul class="navigation__extra ml-auto">
+							<li><a href="#">Sell On  Welmatic </a></li>
+							<li><a href="#">Track your order</a></li>
+						</ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+		<header class="header header--mobile" data-sticky="true">
+			<div class="header__top">
+				<div class="header__left">
+					<p>Welcome to Welmatic Enterprise Online Shopping Store!</p>
+				</div>
+				<div class="header__right">
+					<ul class="navigation__extra">
+						<li><a href="#">Track your order</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="navigation--mobile">
+				<div class="navigation__left">
+					<a class="ps-logo" href="#"><img src="{% static 'images/logo.png'%}" alt="Welmetic- Best Marketplace to sell your product online"></a>
+				</div>
+			 </div>
+			<div class="ps-search--mobile">
+				<form class="ps-form--search-mobile" action="" method="get">
+					<div class="form-group--nest">
+						<input class="form-control" name="q" value="" type="text" placeholder="Search something...">
+						<button type="submit"><i class="fas fa-search"></i></button>
+					</div>
+				</form>
+			</div>
+		</header>
+        <div class="ps-panel--sidebar" id="cart-mobile" style="display: none">
+			<div class="ps-panel__header">
+				<h3>Shopping Cart</h3>
+			</div>
+            <div class="navigation__content">
+				<div class="ps-cart--mobile">
+					<div class="ps-cart__content">
+						<div class="ps-cart__items ps-cart_no_items">
+							<span class="cart-empty-message">No products in the cart.</span>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+            <div class="ps-panel--sidebar" id="navigation-mobile" style="display: none">
+                <div class="ps-panel__header">
+                    <h3>Categories</h3>
+                </div>
+                <div class="ps-panel__content">
+                    <ul class="menu--mobile">
+                        <li>
+							<a href="#"><i class="fas fa-bacteria"></i> Organic CBD</a>
+						</li>
+						<li class="menu-item-has-children has-mega-menu" >
+							<a href="#"><i class="fas fa-hand-holding-medical"></i>  COVID-19 vaccines</a>
+								<span class="sub-toggle"></span>
+								<div class="mega-menu">
+									<div class="mega-menu__column">
+										<a href="#"><h4>Consumer Electronic<span class="sub-toggle"></span></h4></a>
+											<ul class="mega-menu__list">
+												<li><a href="#">Home Audio &amp; Theaters</a></li>
+												<li><a href="#">TV &amp; Videos</a></li>
+												<li><a href="#">Camera, Photos &amp; Videos</a></li>
+												<li><a href="#">Cellphones &amp; Accessories</a></li>
+												<li><a href="#">Headphones</a></li>
+												<li><a href="#">Videos games</a></li>
+												<li><a href="#">Wireless Speakers</a></li>
+												<li><a href="#">Office Electronic</a></li>
+											</ul>
+									</div>
+									<div class="mega-menu__column">
+										<a href="#"><h4>Accessories &amp; Parts<span class="sub-toggle"></span></h4></a>
+										<ul class="mega-menu__list">
+											<li><a href="#">Digital Cables</a></li>
+											<li><a href="#">Audio &amp; Video Cables</a></li>
+											<li><a href="#">Batteries</a></li>
+										</ul>
+									</div>
+								</div>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-file-medical-alt"></i> $4 Prescriptions</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-cheese"></i>  Functional Foods</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-american-sign-language-interpreting"></i>  Cosmeceutical</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-person-booth"></i>  Personal Care</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-capsules"></i>  Medicine</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-briefcase-medical"></i>  Medical Equipment</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-head-side-cough"></i>  Sick</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-network-wired"></i>  Other</a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navigation--list">
+				<div class="navigation__content">
+					<a class="navigation__item ps-toggle--sidebar" href="#menu-mobile"><i class="fas fa-bars"></i> <br><span>Menu</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#navigation-mobile"><i class="fas fa-box-open"></i><br><span> Categories</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#search-sidebar"><i class="fas fa-search"></i><br><span> Search</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#cart-mobile"><i class="fas fa-shopping-cart"></i><br><span> Cart</span></a>
+				</div>
+			</div>
+            <div class="ps-panel--sidebar" id="search-sidebar" style="display: none">
+                <div class="ps-panel__header">
+                    <form class="ps-form--search-mobile" action="" method="get">
+                        <div class="form-group--nest">
+                            <input class="form-control" name="q" value="" type="text" placeholder="Search something...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="navigation__content"></div>
+            </div>
+            <div class="ps-panel--sidebar" id="menu-mobile" style="display: none">
+				<div class="ps-panel__header">
+					<h3>Menu</h3>
+				</div>
+				<div class="ps-panel__content">
+					<ul  class="menu--mobile">
+						<li class="current-menu-item "><a href="#"> Home</a></li>
+						<li class=" menu-item-has-children   ">
+							<a href="#">Shop</a>
+							<span class="sub-toggle"></span>
+							<ul  class="sub-menu">
+								<li class="">
+									<a href="#">
+										 All products
+									</a>
+								</li>
+								<li class="">
+									<a href="#">
+										 Products Of Category
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#">
+								 Blog
+							</a>
+						</li>
+						<li class="">
+							<a href="#">
+								 FAQs
+							</a>
+						</li>
+						<li class="">
+							<a href="#">
+								 Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="homepage-1">
+				<div id="app">
+					<div class="ps-home-banner ps-home-banner--1">
+						<div class="ps-container">
+							<div class="ps-section__left">
+								<img src="{% static 'images/h3_banner1.jpg'%}" class="img-fluid">
+								<div class="row justify-contant-center mt-5">
+									<div class="col-lg-6 col-md-6 col-12">
+										<div><a href="#" target="_blank"><img src="{% static 'images/h3_banner4.jpg'%}" class="w-100" style="max-width: 100%" alt=""></a></div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div><a href="#" target="_blank"><img src="{% static 'images/h3_banner5.jpg'%}" class="w-100" style="max-width: 100%" alt=""></a></div>
+									</div>
+								</div>
+							</div>
+							<div class="ps-section__right">
+								<div class="ps-collection">
+									<div><a href="#" target="_blank"><img src="{% static 'images/h2-img2.jpg'%}" style="max-width: 100%" alt=""></a></div>
+								</div>
+								<div class="ps-collection">
+									<div><a href="#" target="_blank"><img src="{% static 'images/h3_banner2.jpg'%}" style="max-width: 100%" alt=""></a></div>
+								</div>
+								<div class="ps-collection">
+									<div><a href="#" target="_blank"><img src="{% static 'images/h3_banner6.jpg'%}" class="w-100" style="max-width: 100%" alt=""></a></div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<section class="image-2-section">
+				<div class="ps-container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="media justify-content-around align-items-center border p-3">
+								<img src="{% static 'images/h1_img1.jpg'%}" alt="" class="img-fluid">
+								<div class="media-body pl-5 py-4">
+									<h4>Covid Essentials</h4>
+									<a href="#">Covid Essentials</a><br>
+									<a href="#">Disinfectants</a><br>
+									<a href="#">Home Hygiene Essentials</a><br>
+									<a href="#">Masks</a><br>
+									<h5 class="m-0"><a href="#" class="text-primary"><strong>View all Covid Essentials </strong><i class="fas fa-angle-right"></i></a></h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="media justify-content-around align-items-center border p-3">
+								<img src="{% static 'images/h1_img2.jpg'%}" alt="" class="img-fluid">
+								<div class="media-body pl-5 py-4">
+									<h4>Covid Essentials</h4>
+									<a href="#">Covid Essentials</a><br>
+									<a href="#">Disinfectants</a><br>
+									<a href="#">Home Hygiene Essentials</a><br>
+									<a href="#">Masks</a><br>
+									<h5 class="m-0"><a href="#" class="text-primary"><strong>View all Covid Essentials </strong><i class="fas fa-angle-right"></i></a></h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="media justify-content-around align-items-center border p-3">
+								<img src="{% static 'images/h1_img3.jpg'%}" alt="" class="img-fluid">
+								<div class="media-body pl-5 py-4">
+									<h4>Covid Essentials</h4>
+									<a href="#">Covid Essentials</a><br>
+									<a href="#">Disinfectants</a><br>
+									<a href="#">Home Hygiene Essentials</a><br>
+									<a href="#">Masks</a><br>
+									<h5 class="m-0"><a href="#" class="text-primary"><strong>View all Covid Essentials </strong><i class="fas fa-angle-right"></i></a></h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="best-seller">
+				<div class="ps-container">
+					<div class="ps-container px-0">
+						<div class="d-flex justify-content-between">
+							<h3>Best Sellers</h3>
+							<a href="#" class="text-primary"><strong>View all</strong></a>
+						</div>	
+						<hr>
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="box-section">
+									
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>	
+			
+			<section class="banner-slide">
+				<div class="ps-container">
+					<div class="testimonial-slider owl-carousel mt-5">
+						<div class="testimonial-items">
+							<div class="testimonial-item-wrapper">
+								<div class="tesimonial-img">
+									<img src="{% static 'images/img-1.jpg'%}" class="img-fluid">
+								</div>
+								<div class="wishlist">
+									<span><i class="far fa-heart"></i></span>
+								</div>
+								<div class="data-box">
+									<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+									<h3><a href="#">$ 140.00</a></h3>
+									<div class="d-flex justify-content-between align-items-center">
+										<ul class="star-rating">
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+										</ul>
+										<div class="cart-bag">
+											<i class="fas fa-shopping-bag"></i>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="testimonial-items">
+							<div class="testimonial-item-wrapper">
+								<div class="tesimonial-img">
+									<img src="{% static 'images/img-2.jpg'%}" class="img-fluid">
+								</div>
+								<div class="wishlist">
+									<span><i class="far fa-heart"></i></span>
+								</div>
+								<div class="data-box">
+									<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+									<h3><a href="#">$ 140.00</a></h3>
+									<div class="d-flex justify-content-between align-items-center">
+										<ul class="star-rating">
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+										</ul>
+										<div class="cart-bag">
+											<i class="fas fa-shopping-bag"></i>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="testimonial-items">
+							<div class="testimonial-item-wrapper">
+								<div class="tesimonial-img">
+									<img src="{% static 'images/img-3.jpg'%}" class="img-fluid">
+								</div>
+								<div class="wishlist">
+									<span><i class="far fa-heart"></i></span>
+								</div>
+								<div class="data-box">
+									<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+									<h3><a href="#">$ 140.00</a></h3>
+									<div class="d-flex justify-content-between align-items-center">
+										<ul class="star-rating">
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+										</ul>
+										<div class="cart-bag">
+											<i class="fas fa-shopping-bag"></i>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="testimonial-items">
+							<div class="testimonial-item-wrapper">
+								<div class="tesimonial-img">
+									<img src="{% static 'images/img-1.jpg'%}" class="img-fluid">
+								</div>
+								<div class="wishlist">
+									<span><i class="far fa-heart"></i></span>
+								</div>
+								<div class="data-box">
+									<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+									<h3><a href="#">$ 140.00</a></h3>
+									<div class="d-flex justify-content-between align-items-center">
+										<ul class="star-rating">
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+										</ul>
+										<div class="cart-bag">
+											<i class="fas fa-shopping-bag"></i>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="testimonial-items">
+							<div class="testimonial-item-wrapper">
+								<div class="tesimonial-img">
+									<img src="{% static 'images/img-2.jpg'%}" class="img-fluid">
+								</div>
+								<div class="wishlist">
+									<span><i class="far fa-heart"></i></span>
+								</div>
+								<div class="data-box">
+									<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+									<h3><a href="#">$ 140.00</a></h3>
+									<div class="d-flex justify-content-between align-items-center">
+										<ul class="star-rating">
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="#"><i class="fas fa-star"></i></a></li>
+										</ul>
+										<div class="cart-bag">
+											<i class="fas fa-shopping-bag"></i>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="best-seller-discount">
+				<div class="ps-container">
+					<div class="discount">
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="discount-section">
+								<h4 class="text-white">Super discount for your first purchase</h4>
+								<h4 class="text-muted mb-0">Use discount code in checkout page.</h4>
+							</div>
+							<div class="btn-seller">
+								<a href="#" class="btn"><i class="fas fa-chart-bar"></i>  FREE256MAC</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>	
+			
+			<section class="best-seller">
+				<div class="ps-container">
+					<div class="ps-container px-0">
+						<div class="d-flex justify-content-between">
+							<h3>Top trending</h3>
+							<a href="#" class="text-primary"><strong>View all</strong></a>
+						</div>	
+						<hr>
+						<div class="row mt-5 pt-4">
+							<div class="col-lg-5 col-md-6 col-12">
+								<div class="box-section-trending border">
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-12">
+											<div class="personal-care p-4">
+												<h4 class="mb-5">Personal Care</h4>
+												<p><a href="#">Her Health</a></p>
+												<p><a href="#">His Health</a></p>
+												<p><a href="#">Sexual Health</a></p>
+												<p><a href="#">Gut Health</a></p>
+												<p><a href="#">Cough, Cold & Flu</a></p>
+											</div>
+											<div class="personal-care p-4 mt-5">
+												<h4 class="mb-5">Health & First Aids</h4>
+												<p><a href="#">Her Health</a></p>
+												<p><a href="#">His Health</a></p>
+												<p><a href="#">Sexual Health</a></p>
+												<p><a href="#">Gut Health</a></p>
+												<p><a href="#">Cough, Cold & Flu</a></p>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-12">
+											<div class="personal-care">
+												<img src="{% static 'images/h3_banner7.jpg'%}" class="img-fluid">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-6 col-12">
+								<div class="box-section-trending">
+									<div class="row">
+										<div class="col-lg-4 col-md-6 col-12">
+											<div class="testimonial-items">
+												<div class="testimonial-item-wrapper">
+													<div class="tesimonial-img">
+														<img src="{% static 'images/img-2.jpg'%}" class="img-fluid">
+													</div>
+													<div class="wishlist">
+														<span><i class="far fa-heart"></i></span>
+													</div>
+													<div class="data-box">
+														<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+														<h3><a href="#">$ 140.00</a></h3>
+														<div class="d-flex justify-content-between align-items-center">
+															<ul class="star-rating">
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+															</ul>
+															<div class="cart-bag">
+																<i class="fas fa-shopping-bag"></i>
+															</div>
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-12">
+											<div class="testimonial-items">
+												<div class="testimonial-item-wrapper">
+													<div class="tesimonial-img">
+														<img src="{% static 'images/img-1.jpg'%}" class="img-fluid">
+													</div>
+													<div class="wishlist">
+														<span><i class="far fa-heart"></i></span>
+													</div>
+													<div class="data-box">
+														<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+														<h3><a href="#">$ 140.00</a></h3>
+														<div class="d-flex justify-content-between align-items-center">
+															<ul class="star-rating">
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+															</ul>
+															<div class="cart-bag">
+																<i class="fas fa-shopping-bag"></i>
+															</div>
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-12">
+											<div class="testimonial-items">
+												<div class="testimonial-item-wrapper">
+													<div class="tesimonial-img">
+														<img src="{% static 'images/img-3.jpg'%}" class="img-fluid">
+													</div>
+													<div class="wishlist">
+														<span><i class="far fa-heart"></i></span>
+													</div>
+													<div class="data-box">
+														<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+														<h3><a href="#">$ 140.00</a></h3>
+														<div class="d-flex justify-content-between align-items-center">
+															<ul class="star-rating">
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+															</ul>
+															<div class="cart-bag">
+																<i class="fas fa-shopping-bag"></i>
+															</div>
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-12">
+											<div class="testimonial-items">
+												<div class="testimonial-item-wrapper">
+													<div class="tesimonial-img">
+														<img src="{% static 'images/img-2.jpg'%}" class="img-fluid">
+													</div>
+													<div class="wishlist">
+														<span><i class="far fa-heart"></i></span>
+													</div>
+													<div class="data-box">
+														<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+														<h3><a href="#">$ 140.00</a></h3>
+														<div class="d-flex justify-content-between align-items-center">
+															<ul class="star-rating">
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+															</ul>
+															<div class="cart-bag">
+																<i class="fas fa-shopping-bag"></i>
+															</div>
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-12">
+											<div class="testimonial-items">
+												<div class="testimonial-item-wrapper">
+													<div class="tesimonial-img">
+														<img src="{% static 'images/img-1.jpg'%}" class="img-fluid">
+													</div>
+													<div class="wishlist">
+														<span><i class="far fa-heart"></i></span>
+													</div>
+													<div class="data-box">
+														<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+														<h3><a href="#">$ 140.00</a></h3>
+														<div class="d-flex justify-content-between align-items-center">
+															<ul class="star-rating">
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+															</ul>
+															<div class="cart-bag">
+																<i class="fas fa-shopping-bag"></i>
+															</div>
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-12">
+											<div class="testimonial-items">
+												<div class="testimonial-item-wrapper">
+													<div class="tesimonial-img">
+														<img src="{% static 'images/img-3.jpg'%}" class="img-fluid">
+													</div>
+													<div class="wishlist">
+														<span><i class="far fa-heart"></i></span>
+													</div>
+													<div class="data-box">
+														<h4><a href="#">Ocuvite Vitamin and Mineral Supplement with Lutein Tablets</a></h4>
+														<h3><a href="#">$ 140.00</a></h3>
+														<div class="d-flex justify-content-between align-items-center">
+															<ul class="star-rating">
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+																<li><a href="#"><i class="fas fa-star"></i></a></li>
+															</ul>
+															<div class="cart-bag">
+																<i class="fas fa-shopping-bag"></i>
+															</div>
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>	
+			
+			<section class="best-seller my-5 pt-4">
+				<div class="ps-container">
+					<div class="ps-container px-0">
+						<div class="d-flex justify-content-between">
+							<h3>Top trending</h3>
+							<a href="#" class="text-primary"><strong>View all</strong></a>
+						</div>	
+						<hr>
+						<div class="row mt-5 pt-4 no-gutters">
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+							  			<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="trending-section">
+									<div class="media border align-items-center p-3">
+										<img src="{% static 'images/Product_image_1.jpg'%}" alt="" class="img-fluid">
+										<div class="media-body">
+											<h5><a href="#">Nature’s Bounty Optimal Solutions Women’s Multi 50 mg, Gummies</a></h5>
+											<h4 class="mb-0">$150.00</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>
+			
+			<div class="banner-last mt-5 pt-5">
+				<div class="ps-container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="banner_boxs">
+								<div class="row">
+									<div class="col-lg-4 col-md-6 col-12">
+										<img src="{% static 'images/h1_banner9.jpg'%}" class="img-fluid">
+									</div>
+									<div class="col-lg-8 col-md-6 col-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="product_part">
+													<h5>Vitamins <br> Supplements</h5>
+													<p>7 Products</p>
+													<img src="{% static 'images/h1-cat1.jpg'%}" class="img-fluid">
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="product_part">
+													<h5>Medicines</h5>
+													<p>7 Products</p>
+													<img src="{% static 'images/h1-cat2.jpg'%}" class="img-fluid">
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="product_part">
+													<h5>Health & First Aids</h5>
+													<p>7 Products</p>
+													<img src="{% static 'images/h1-cat3.jpg'%}" class="img-fluid">
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="product_part">
+													<h5>Mum & Baby</h5>
+													<p>7 Products</p>
+													<img src="{% static 'images/h1-cat4.jpg'%}" class="img-fluid">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="banner_boxs">
+								<div class="row">
+									<div class="col-lg-4 col-md-6 col-12">
+										<img src="{% static 'images/h1_banner10.jpg'%}" class="img-fluid">
+									</div>
+									<div class="col-lg-8 col-md-6 col-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="product_part">
+													<h5>Vitamins <br> Supplements</h5>
+													<p>7 Products</p>
+													<img src="{% static 'images/h1-cat1.jpg'%}" class="img-fluid">
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="product_part">
+													<h5>Medicines</h5>
+													<p>7 Products</p>
+													<img src="{% static 'images/h1-cat2.jpg'%}" class="img-fluid">
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="product_part">
+													<h5>Health & First Aids</h5>
+													<p>7 Products</p>
+													<img src="{% static 'images/h1-cat3.jpg'%}" class="img-fluid">
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="product_part">
+													<h5>Mum & Baby</h5>
+													<p>7 Products</p>
+													<img src="{% static 'images/h1-cat4.jpg'%}" class="img-fluid">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="section-footer-top my-5 py-5">
+				<div class="ps-container">
+					<div class="bg-footer-img py-5">
+						<h4 class="text-white mb-0 py-5">We are open with limited hours and staff.</h4>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section-footer-bottom my-5 py-5">
+				<div class="ps-container">
+					<div class="bg-footer">
+						<div class="row align-items-center">
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="logo_page">
+									<img src="{% static 'images/logo.png'%}" class="img-fluid">
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="logo_page">
+									<div class="media align-items-center p-3">
+										<i class="fas fa-comments"></i>
+										<div class="media-body">
+											<p class="text-muted">Got Questions ? Call us 24/7! </p>
+											<h3 class="mb-0 text-white">+01 2222 3456 88</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="input-group">
+									<input type="text" class="form-control bg-white" placeholder="Search">
+									<div class="input-group-append">
+										<button class="btn btn-success px-5" type="submit">Subscribe</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<section class="footer">
+				<div class="ps-container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Contact</h4>
+								<p><span><i class="fas fa-map-marker-alt"></i> </span>&#10240; 121 S Jane Ln Enid, Oklahoma(OK), 73703</p>
+								<p><span><i class="fas fa-envelope"></i> </span>&#10240; myshopemail@domain.com</p>
+								<p><span><i class="fas fa-clock"></i> </span>&#10240; Mon-Sat: 9:00pm - 5:00pm Sun: Closed</p>
+								<div class="footer-widget-listing social-icons-footer mt-5">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-linkedin-in"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Find It Fast</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Useful links</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Customer Care</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="footer-bottom-section d-flex justify-content-between align-items-center py-4">
+						<p class="mb-0">Copyright © 2022 Caplet Pharmacy - All Rights Reserved</p>
+						<img src="{% static 'images/payment.png'%}" class="img-fluid">
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			
+			
+			
+			
+		 
+	<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+	<script src="{% static 'js/popper.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/sticky-sidebar.min.js' %}"></script>
+	<script src="{% static 'js/backend.js' %}"></script>
+	<script src="{% static 'js/custom.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

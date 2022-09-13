@@ -1,0 +1,352 @@
+{% extends 'app_website/base.html'%}
+{% load static %}
+{% block content %}
+    
+		<header class="header header--mobile" data-sticky="true">
+			<div class="header__top">
+				<div class="header__left">
+					<p>Welcome to Welmatic Enterprise Online Shopping Store!</p>
+				</div>
+				<div class="header__right">
+					<ul class="navigation__extra">
+						<li><a href="#">Track your order</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="navigation--mobile">
+				<div class="navigation__left">
+					<a class="ps-logo" href="#"><img src="images/logo.png" alt="Welmetic- Best Marketplace to sell your product online"></a>
+				</div>
+			 </div>
+			<div class="ps-search--mobile">
+				<form class="ps-form--search-mobile" action="" method="get">
+					<div class="form-group--nest">
+						<input class="form-control" name="q" value="" type="text" placeholder="Search something...">
+						<button type="submit"><i class="fas fa-search"></i></button>
+					</div>
+				</form>
+			</div>
+		</header>
+        <div class="ps-panel--sidebar" id="cart-mobile" style="display: none">
+			<div class="ps-panel__header">
+				<h3>Shopping Cart</h3>
+			</div>
+            <div class="navigation__content">
+				<div class="ps-cart--mobile">
+					<div class="ps-cart__content">
+						<div class="ps-cart__items ps-cart_no_items">
+							<span class="cart-empty-message">No products in the cart.</span>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+            <div class="ps-panel--sidebar" id="navigation-mobile" style="display: none">
+                <div class="ps-panel__header">
+                    <h3>Categories</h3>
+                </div>
+                <div class="ps-panel__content">
+                    <ul class="menu--mobile">
+                        <li>
+							<a href="#"><i class="fas fa-bacteria"></i> Organic CBD</a>
+						</li>
+						<li class="menu-item-has-children has-mega-menu" >
+							<a href="#"><i class="fas fa-hand-holding-medical"></i>  COVID-19 vaccines</a>
+								<span class="sub-toggle"></span>
+								<div class="mega-menu">
+									<div class="mega-menu__column">
+										<a href="#"><h4>Consumer Electronic<span class="sub-toggle"></span></h4></a>
+											<ul class="mega-menu__list">
+												<li><a href="#">Home Audio &amp; Theaters</a></li>
+												<li><a href="#">TV &amp; Videos</a></li>
+												<li><a href="#">Camera, Photos &amp; Videos</a></li>
+												<li><a href="#">Cellphones &amp; Accessories</a></li>
+												<li><a href="#">Headphones</a></li>
+												<li><a href="#">Videos games</a></li>
+												<li><a href="#">Wireless Speakers</a></li>
+												<li><a href="#">Office Electronic</a></li>
+											</ul>
+									</div>
+									<div class="mega-menu__column">
+										<a href="#"><h4>Accessories &amp; Parts<span class="sub-toggle"></span></h4></a>
+										<ul class="mega-menu__list">
+											<li><a href="#">Digital Cables</a></li>
+											<li><a href="#">Audio &amp; Video Cables</a></li>
+											<li><a href="#">Batteries</a></li>
+										</ul>
+									</div>
+								</div>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-file-medical-alt"></i> $4 Prescriptions</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-cheese"></i>  Functional Foods</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-american-sign-language-interpreting"></i>  Cosmeceutical</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-person-booth"></i>  Personal Care</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-capsules"></i>  Medicine</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-briefcase-medical"></i>  Medical Equipment</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-head-side-cough"></i>  Sick</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fas fa-network-wired"></i>  Other</a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navigation--list">
+				<div class="navigation__content">
+					<a class="navigation__item ps-toggle--sidebar" href="#menu-mobile"><i class="fas fa-bars"></i> <br><span>Menu</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#navigation-mobile"><i class="fas fa-box-open"></i><br><span> Categories</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#search-sidebar"><i class="fas fa-search"></i><br><span> Search</span></a>
+					<a class="navigation__item ps-toggle--sidebar" href="#cart-mobile"><i class="fas fa-shopping-cart"></i><br><span> Cart</span></a>
+				</div>
+			</div>
+            <div class="ps-panel--sidebar" id="search-sidebar" style="display: none">
+                <div class="ps-panel__header">
+                    <form class="ps-form--search-mobile" action="" method="get">
+                        <div class="form-group--nest">
+                            <input class="form-control" name="q" value="" type="text" placeholder="Search something...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="navigation__content"></div>
+            </div>
+            <div class="ps-panel--sidebar" id="menu-mobile" style="display: none">
+				<div class="ps-panel__header">
+					<h3>Menu</h3>
+				</div>
+				<div class="ps-panel__content">
+					<ul  class="menu--mobile">
+						<li class="current-menu-item "><a href="#"> Home</a></li>
+						<li class=" menu-item-has-children   ">
+							<a href="#">Shop</a>
+							<span class="sub-toggle"></span>
+							<ul  class="sub-menu">
+								<li class="">
+									<a href="#">
+										 All products
+									</a>
+								</li>
+								<li class="">
+									<a href="#">
+										 Products Of Category
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#">
+								 Blog
+							</a>
+						</li>
+						<li class="">
+							<a href="#">
+								 FAQs
+							</a>
+						</li>
+						<li class="">
+							<a href="#">
+								 Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="slidermar">
+				<div class="inner-banner">
+					<div class="ps-container">
+						<div class="layer">
+							<h3>Contact</h3>
+							<p>Home/Contact</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+			
+			<section class="contact_us py-5">
+				<div class="ps-container">
+					<div class="contact-us text-center">
+						<p>You can ask us questions! or you can solve your problems in a shorter time with our contact offices.</p>
+						<h2>Contact Information</h2>
+					</div>	
+					<div class="row mt-5">
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="contact-box">
+								<i class="far fa-envelope"></i>
+								<h3>E-mail Address</h3>
+								<p>caplet@gmail.com</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="contact-box">
+								<i class="fas fa-phone"></i>
+								<h3>Phone Number</h3>
+								<p>+91 1234567890</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="contact-box">
+								<i class="fas fa-map-marker-alt"></i>
+								<h3>Address</h3>
+								<p>121 S Jane Ln Enid, Oklahoma(OK), 73703</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="contact_us_map py-5">
+				<div class="ps-container">
+					<div class="row no-gutters">
+						<div class="col-lg-7 col-md-6 col-12">
+							<div class="map_section">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.836745497823!2d76.81741711548148!3d30.6385581972156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feb29503b5331%3A0xf6bdb7d0c16a14c5!2sChandigarh%20Citi%20Center!5e0!3m2!1sen!2sin!4v1659348848141!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-6 col-12">
+							<div class="map_section_data">
+								<p>Ask us anything here</p>
+								<h2>Get in Touch</h2>
+								<div class="row mt-4">
+									<div class="col-lg-6 col-12">
+										<div class="form-group bg-white">
+											<input type="text" class="form-control" placeholder="Your Name" id="">
+										</div>
+									</div>
+									<div class="col-lg-6 col-12">
+										<div class="form-group bg-white">
+											<input type="email" class="form-control" placeholder="Your Email" id="">
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group bg-white">
+											<input type="text" class="form-control" placeholder="Subject" id="">
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group bg-white">
+											<textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+										</div> 
+									</div>
+									<div class="col-12">
+										<div class="btn-seller">
+											<button type="submit" class="btn">Send Message</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>	
+			
+			
+			<div class="section-footer-bottom my-5 py-5">
+				<div class="ps-container">
+					<div class="bg-footer">
+						<div class="row align-items-center">
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="logo_page">
+									<img src="images/logo.png" class="img-fluid">
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="logo_page">
+									<div class="media align-items-center p-3">
+										<i class="fas fa-comments"></i>
+										<div class="media-body">
+											<p class="text-muted">Got Questions ? Call us 24/7! </p>
+											<h3 class="mb-0 text-white">+01 2222 3456 88</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="input-group">
+									<input type="text" class="form-control bg-white" placeholder="Search">
+									<div class="input-group-append">
+										<button class="btn btn-success px-5" type="submit">Subscribe</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<section class="footer">
+				<div class="ps-container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Contact</h4>
+								<p><span><i class="fas fa-map-marker-alt"></i> </span>&#10240; 121 S Jane Ln Enid, Oklahoma(OK), 73703</p>
+								<p><span><i class="fas fa-envelope"></i> </span>&#10240; myshopemail@domain.com</p>
+								<p><span><i class="fas fa-clock"></i> </span>&#10240; Mon-Sat: 9:00pm - 5:00pm Sun: Closed</p>
+								<div class="footer-widget-listing social-icons-footer mt-5">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-linkedin-in"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Find It Fast</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Useful links</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="footer-box">
+								<h4>Customer Care</h4>
+								<ul class="footer_link">
+									<li><a href="#">Organic CBD</a></li>
+									<li><a href="#">COVID-19 vaccines</a></li>
+									<li><a href="#">Functional Foods</a></li>
+									<li><a href="#">Cosmeceutical</a></li>
+									<li><a href="#">Personal Care</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="footer-bottom-section d-flex justify-content-between align-items-center py-4">
+						<p class="mb-0">Copyright © 2022 Caplet Pharmacy - All Rights Reserved</p>
+						<img src="{% static 'images/payment.png' %}" class="img-fluid">
+					</div>
+				</div>
+			</section>
+			
+	{% endblock %}
