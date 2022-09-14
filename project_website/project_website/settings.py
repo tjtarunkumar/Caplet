@@ -116,7 +116,7 @@ DATABASES = {
         'NAME': 'caplet_backup',
         'USER': 'root',
         'PASSWORD': 'akash6408',
-        'HOST': '18.212.164.103',
+        'HOST': 'ec2-18-212-164-103.compute-1.amazonaws.com',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
