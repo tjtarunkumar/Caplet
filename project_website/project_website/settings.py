@@ -113,7 +113,7 @@ WSGI_APPLICATION = 'project_website.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'caplet_backup',
+        'NAME': 'caplet',
         'USER': 'admin',
         'PASSWORD': 'Mysql@1234',
         'HOST': 'ec2-18-212-164-103.compute-1.amazonaws.com',
