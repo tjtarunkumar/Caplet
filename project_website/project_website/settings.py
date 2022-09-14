@@ -114,8 +114,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'caplet_backup',
-        'USER': 'root',
-        'PASSWORD': 'akash6408',
+        'USER': 'admin',
+        'PASSWORD': 'Mysql@1234',
         'HOST': 'ec2-18-212-164-103.compute-1.amazonaws.com',
         'PORT': '3306',
         'OPTIONS': {
