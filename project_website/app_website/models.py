@@ -97,7 +97,7 @@ class Product(models.Model):
     product_image       = models.ImageField(upload_to='photos/products', blank=True)
     seller_id = models.CharField(max_length=255)
     product_code = models.CharField(max_length=255,null=True)
-    created = models.DateTimeField(auto_now_add=True, blank=True)
+    created = models.DateTimeField(auto_now_add=True, null=True , blank=True)
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
@@ -137,3 +137,16 @@ class Users(models.Model):
     class Meta:
         managed = True
         db_table = 'users'
+
+
+class Orders(models.Model):
+
+    buyer_mobile=models.CharField(max_length=255)
+    seller_id=models.CharField(max_length=255)
+    order_id=models.CharField(max_length=255)
+    order_status=models.IntegerField(max_length=100)
+    created_at=models.DateTimeField(auto_now_add=True,blank=True)
+    updated_at=models.DateTimeField(auto_now=True)
+
+    class Meta:
+        db_table="order_details"

@@ -22,7 +22,7 @@ def cart(request,id):
     cart_data=Cart.objects.filter(buyer_mobile=id).values_list('product_code',flat=True)
     data=list(cart_data)
     test_list=list()
-    
+
     for x in data:
         item=Cart.objects.select_related('product_code').filter(product_code=x,buyer_mobile=id)
         test_list.append(item)
@@ -45,7 +45,7 @@ def change_quantity(request):
 
     Cart.objects.filter(buyer_mobile=Buyer_mobile,product_code_id=Product_id).update(quantity=Quantity)
     item=Product.objects.filter(product_code=Product_id).get()
-    cart_item=Cart.objects.filter(product_code_id=Product_id).get()
+    cart_item=Cart.objects.filter(product_code_id=Product_id,buyer_mobile=Buyer_mobile).get()
     price=item.price
     product_total_amount=(cart_item.quantity*price)
     # print(product_total_amount)
@@ -70,5 +70,5 @@ def delete_product(request):
 def cart_count(request):
     buyer_mobile=request.POST.get('buyer_mobile')
     count=Cart.objects.filter(buyer_mobile=buyer_mobile).count()
-    
+
     return JsonResponse({'count':count})

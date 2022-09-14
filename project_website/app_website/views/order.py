@@ -7,7 +7,7 @@ from ..models import Category, Subcategory,Product, Cart
 
 
 def product_purchase(request):
-    # try:    
+    # try:
         #Extract all the params sent through POST method.
         Product_code=request.POST.get('product_code')
         User_mobile=request.POST.get('user_mobile')
@@ -17,7 +17,7 @@ def product_purchase(request):
         data=Cart.objects.filter(product_code_id=Product_code,buyer_mobile=User_mobile).exists()
         # print(data)
         #Filter out the record to find a record in which a user has already added the same product in the cart and if a record is found already in the table then add the quantity of the product by 1.
-        
+
         # print('data is cart-->',data)
 
         if data:
@@ -38,4 +38,4 @@ def product_purchase(request):
             cart.quantity=1
             cart.save()
 
-        return JsonResponse({'status':'0'})  
+        return JsonResponse({'status':'0'})
