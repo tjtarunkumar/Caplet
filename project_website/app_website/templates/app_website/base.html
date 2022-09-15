@@ -169,7 +169,7 @@
                         <ul class="menu--dropdown">
                             {% for category in categories %}
                             <li class="menu-item-has-children has-mega-menu">
-                                <a href="{{ category.get_absolute_url }}"><img src="{{category.cat_image.url}}" style="width:20px;padding-right: 10px;">{{category.category_name}}</a>
+                                <a href="{{ category.get_absolute_url }}"><img src="{% static {{category.cat_image.url}} %}" style="width:20px;padding-right: 10px;">{{category.category_name}}</a>
                                 <div class="mega-menu">
                                     {% for i in category.subcategory_set.all %}
                                     <div class="mega-menu__column">
