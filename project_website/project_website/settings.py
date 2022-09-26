@@ -176,3 +176,5 @@ PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.Argon2PasswordHasher',
     'django.contrib.auth.hashers.ScryptPasswordHasher',
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://caplet-store.herokuapp.com']
