@@ -115,7 +115,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'caplet',
         'USER': 'admin',
-        'PASSWORD': 'Mysql@1234',
+        'PASSWORD': 'akash6408',
         'HOST': 'ec2-18-206-251-4.compute-1.amazonaws.com',
         'PORT': '3306',
         'OPTIONS': {
