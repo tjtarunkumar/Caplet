@@ -116,7 +116,7 @@ DATABASES = {
         'NAME': 'caplet',
         'USER': 'admin',
         'PASSWORD': 'Mysql@1234',
-        'HOST': 'ec2-18-212-164-103.compute-1.amazonaws.com',
+        'HOST': 'ec2-18-206-251-4.compute-1.amazonaws.com',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
