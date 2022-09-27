@@ -74,7 +74,7 @@ def cart_count(request):
     return JsonResponse({'count':count})
 
 @simple_middleware
-def checkout_page(request):
+def checkout_page(request,id):
     session=request.session.get('mobile_number')
     # category = None
     categories = Category.objects.all()
