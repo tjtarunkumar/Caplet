@@ -134,3 +134,13 @@ class Orders(models.Model):
 
     class Meta:
         db_table="order_details"
+
+
+class States(models.Model):
+
+    name=models.CharField(max_length=255)
+    country_id=models.BigIntegerField()
+
+    class Meta:
+        db_table="states"
+

@@ -75,9 +75,10 @@ def cart_count(request):
 
 @simple_middleware
 def checkout_page(request,id):
+    states=States.objects.all()
     session=request.session.get('mobile_number')
     # category = None
     categories = Category.objects.all()
     subcategories = Subcategory.objects.all()
-    context = {'categories': categories, 'subcategories':subcategories ,'session':session}
+    context = {'categories': categories, 'subcategories':subcategories ,'session':session,'states':states}
     return render(request,'app_website/checkout.html',context)
