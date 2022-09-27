@@ -72,3 +72,6 @@ def cart_count(request):
     count=Cart.objects.filter(buyer_mobile=buyer_mobile).count()
 
     return JsonResponse({'count':count})
+
+def checkout_page(request):
+    return render(request,'app_website/checkout.html')

@@ -28,6 +28,7 @@ urlpatterns = [
     path('cart/<str:id>/',cart.cart,name="cart"),
     path('change_quantity_cart',cart.change_quantity,name="change_quantity_cart"),
     path('delete_product',cart.delete_product,name="change_quantity_cart"),
-    path('cart_count',cart.cart_count,name="cart_count")
+    path('cart_count',cart.cart_count,name="cart_count"),
+    path('checkout_page',cart.checkout_page,name="checkout_page")
 ]
 
