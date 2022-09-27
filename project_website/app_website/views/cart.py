@@ -74,4 +74,9 @@ def cart_count(request):
     return JsonResponse({'count':count})
 
 def checkout_page(request):
+    session=request.session.get('mobile_number')
+    # category = None
+    categories = Category.objects.all()
+    subcategories = Subcategory.objects.all()
+    context = {'categories': categories, 'subcategories':subcategories ,'session':session}
     return render(request,'app_website/checkout.html')
