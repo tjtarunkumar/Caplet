@@ -73,6 +73,7 @@ def cart_count(request):
 
     return JsonResponse({'count':count})
 
+@simple_middleware
 def checkout_page(request):
     session=request.session.get('mobile_number')
     # category = None
