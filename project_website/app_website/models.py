@@ -3,23 +3,7 @@ from django.db import models
 from django.core.exceptions import ValidationError
 # Create your models here.
 
-#####----------------Validator Functions to check validation in models------------------------#####
 
-
-# def valid_function(value):
-#     if "+91" in value:
-#         return value
-
-#     else:
-#         raise ValidationError('Only indian mobile number accepted.')
-
-
-
-
-
-
-
-#####---------------==================================================------------------------#####
 
 
 

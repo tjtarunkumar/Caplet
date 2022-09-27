@@ -10,21 +10,6 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.CreateModel(
-            name='Orders',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('buyer_mobile', models.CharField(max_length=255)),
-                ('seller_id', models.CharField(max_length=255)),
-                ('order_id', models.CharField(max_length=255)),
-                ('order_status', models.IntegerField(max_length=100)),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('updated_at', models.DateTimeField(auto_now=True)),
-            ],
-            options={
-                'db_table': 'order_details',
-            },
-        ),
         migrations.AlterField(
             model_name='product',
             name='created',
