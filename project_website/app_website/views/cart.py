@@ -79,4 +79,4 @@ def checkout_page(request):
     categories = Category.objects.all()
     subcategories = Subcategory.objects.all()
     context = {'categories': categories, 'subcategories':subcategories ,'session':session}
-    return render(request,'app_website/checkout.html')
+    return render(request,'app_website/checkout.html',context)
