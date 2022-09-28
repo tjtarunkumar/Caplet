@@ -251,18 +251,18 @@
 
     }
 
-    var intervalId = window.setInterval(function() {
-        $.ajax({
-            url: '/cart_count',
-            type: 'POST',
-            data: {
-                'buyer_mobile': session,
-                'csrfmiddlewaretoken': '{{csrf_token}}'
-            },
-            success: function(data) {
-                var count = data.count
-                $('.cart_count').text(count)
-            }
-        })
-    }, 1000);
+    // var intervalId = window.setInterval(function() {
+    //     $.ajax({
+    //         url: '/cart_count',
+    //         type: 'POST',
+    //         data: {
+    //             'buyer_mobile': session,
+    //             'csrfmiddlewaretoken': '{{csrf_token}}'
+    //         },
+    //         success: function(data) {
+    //             var count = data.count
+    //             $('.cart_count').text(count)
+    //         }
+    //     })
+    // }, 1000);
 </script>

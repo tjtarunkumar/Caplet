@@ -48,7 +48,7 @@ SECRET_KEY = ['j)0c45tai4eh3#ptnaip1d(4!naeac%a)sf6=e_bvny386)rpu']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["caplet-store.herokuapp.com","localhost"]
+ALLOWED_HOSTS = ["caplet-store.herokuapp.com","localhost",'127.0.0.1']
 
 
 # Application definition

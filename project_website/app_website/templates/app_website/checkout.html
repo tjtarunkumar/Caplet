@@ -109,10 +109,25 @@
                     </div> -->
                     <div class="col-md-4 mb-3">
                         <label for="state">State</label>
-                        <select class="custom-select d-block w-100" id="state" required="">
+                        <select class="custom-select d-block w-100 h-50" id="state" required="">
                             <option value="">Choose...</option>
-                            <option>California</option>
-                            {{states}}
+                           
+                           {% for x in states %}
+                          
+                           <option id="state"> {{ x.name }}</option>
+                           {% endfor %}
+                        </select>
+                        <div class="invalid-feedback"> Please provide a valid state. </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="state">City</label>
+                        <select class="custom-select d-block w-100 h-50" id="state" required="">
+                            <option value="">Choose...</option>
+                           
+                           {% for x in states %}
+                          
+                           <option id="state"> {{ x.name }}</option>
+                           {% endfor %}
                         </select>
                         <div class="invalid-feedback"> Please provide a valid state. </div>
                     </div>

@@ -8,7 +8,7 @@ from django.db.models import Sum
 from app_website.middlewares.auth import *
 
 # from project_website.models import Products
-from ..models import Category, Subcategory,Product , Cart
+from ..models import Category, Subcategory,Product , Cart ,States
 
 import json
 
@@ -76,6 +76,7 @@ def cart_count(request):
 @simple_middleware
 def checkout_page(request,id):
     states=States.objects.all()
+    # print(states)
     session=request.session.get('mobile_number')
     # category = None
     categories = Category.objects.all()
